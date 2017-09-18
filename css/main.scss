@@ -1,0 +1,63 @@
+//made by katgal, september 2017
+
+body {
+  box-sizing: border-box;
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+// aside{
+// z-index:10;
+// }
+
+%textCenter {
+  text-align: center;
+  // margin-bottom: 15px;
+}
+
+h1 {
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  @extend %textCenter;
+}
+
+.goodday {
+  @extend %textCenter;
+  width: 100%;
+
+}
+
+.container {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 70vw;
+  height: 75vh;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.box {
+  width: 25%;
+  height: 25%;
+  margin: 15px;
+  background-color: red;
+  // @extend %textCenter;
+  text-transform: uppercase;
+  display: flex;
+    justify-content: center;
+    align-items: center;
+  a{
+  //  @extend %textCenter;
+  //  text-transform: uppercase;
+      margin: 50%;}
+}

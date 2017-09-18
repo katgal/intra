@@ -1,0 +1,55 @@
+body {
+  box-sizing: border-box;
+  background-color: blue;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  padding: 2%;
+}
+
+h1, .goodday {
+  text-align: center;
+}
+
+h1 {
+  width: 100%;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+}
+
+.goodday {
+  width: 100%;
+}
+
+.container {
+  background-color: white;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  width: 70vw;
+  height: 75vh;
+  overflow: auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  padding: 15px;
+}
+
+.box {
+  width: 25%;
+  height: 25%;
+  margin: 15px;
+  background-color: red;
+  text-transform: uppercase;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.box a {
+  margin: 50%;
+}
+
+/*# sourceMappingURL=main.css.map */
