@@ -1,8 +1,11 @@
 //made by katgal, september 2017
-
+*{
+  box-sizing: border-box;
+}
 body {
   box-sizing: border-box;
   background-color: blue;
+  background-image: url("../images/blueSquares.jpg");
   background-repeat: no-repeat;
   background-attachment: fixed;
   display: flex;
@@ -17,20 +20,22 @@ body {
 
 %textCenter {
   text-align: center;
-  // margin-bottom: 15px;
+  margin-bottom: 15px;
 }
 
 h1 {
-  width: 100%;
+  background-color: rgba(255,255,255, 0.3);
+  width: 70%;
   font-size: 1.3rem;
   text-transform: uppercase;
   @extend %textCenter;
+  border-radius: 5px;
 }
 
 .goodday {
   @extend %textCenter;
   width: 100%;
-
+width: 70%;
 }
 
 .container {
