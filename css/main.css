@@ -10,6 +10,7 @@ body {
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
+  font-family: Arial, sans-serif;
   display: flex;
   justify-content: center;
   align-items: flex-start;
@@ -57,6 +58,7 @@ h1 {
   margin-right: 10px;
   border-radius: 5px;
   padding: 30px;
+  max-height: 1024px;
 }
 
 .container {
@@ -65,6 +67,7 @@ h1 {
   background-attachment: fixed;
   width: 40vw;
   height: 60vh;
+  max-height: 1024px;
   overflow: auto;
   display: flex;
   justify-content: space-around;
@@ -94,6 +97,7 @@ h1 {
 
 .box:hover {
   box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(72, 179, 212, 0.4);
 }
 
 .box:hover a {
@@ -111,6 +115,21 @@ a {
 
 a:link {
   text-decoration: none;
+}
+
+@media only screen and (max-width: 520px) {
+  .asideInfo, .container, .box {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 767px) {
+  .asideInfo, .container {
+    width: 47%;
+  }
+  .box {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
