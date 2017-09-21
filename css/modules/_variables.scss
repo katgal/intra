@@ -3,15 +3,48 @@
 $main-color: rgb(195,234,243);
 $accent-color: rgb(72,179, 212);
 
- //colors additional
+//colors additional
 $additional-color: rgb(255,255, 255);
 $additional2-color: rgb(0,0,0);
 
- //color minor
+//color minor
 $minor1-color: rgb(27,121,182);
 $minor2-color: rgb(37,158,195);
 $minor3-color: rgb(132,208, 234);
 $minor4-color: rgb(30,136, 186);
+
+//body background
+%body {
+  box-sizing: border-box;
+  background-color: darken($main-color, 45%);
+  background-image: url("../images/sky.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: Arial, sans-serif;
+  padding: 5%;
+}
+
+//header styles
+%header {
+  width: 88%;
+  height: 80px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  color: $main-color;
+  font-weight: bold;
+}
 
 
 // $smartphones: "(min-width : 320px) and (max-width : 480px)";

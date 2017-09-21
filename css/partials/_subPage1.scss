@@ -1,0 +1,13 @@
+
+//made by katgal, september 2017
+ *{
+   box-sizing: border-box;
+ }
+
+ body{
+   @extend %body;
+ }
+
+h1{
+   @extend %header;
+}
