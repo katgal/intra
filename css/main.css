@@ -7,6 +7,15 @@ body {
   background-attachment: fixed;
   background-size: cover;
   font-family: Arial, sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
   padding: 5%;
 }
 
@@ -27,6 +36,53 @@ h1 {
   align-items: center;
   color: #c3eaf3;
   font-weight: bold;
+}
+
+.content {
+  width: 70vw;
+  max-width: 1200px;
+  height: 60vh;
+  max-height: 1024px;
+  overflow: auto;
+  padding: 30px;
+  border-radius: 5px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  -webkit-box-align: start;
+  -ms-flex-align: start;
+  align-items: flex-start;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+.content:hover {
+  box-shadow: 0 1px 10px 2px rgba(132, 208, 234, 0.2);
+}
+
+.links {
+  width: 80%;
+  font-size: 1.2em;
+  height: auto;
+  margin: 20px;
+  padding: 20px;
+  text-align: center;
+  border-radius: 5px;
+  box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
+  color: #c3eaf3;
+}
+
+.links:link {
+  text-decoration: none;
+}
+
+.links:hover {
+  box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(72, 179, 212, 0.4);
+  color: white;
 }
 
 /* http://meyerweb.com/eric/tools/css/reset/ 2. v2.0 | 20110126
@@ -137,7 +193,6 @@ h1 {
   margin-right: 10px;
   border-radius: 5px;
   padding: 30px;
-  max-height: 1024px;
 }
 
 .container {
@@ -168,8 +223,9 @@ h1 {
 .box {
   width: 40%;
   height: 25%;
-  min-width: 135px;
+  min-width: 155px;
   margin: 15px;
+  font-size: 1.1em;
   text-align: center;
   text-transform: uppercase;
   display: -webkit-box;
@@ -197,6 +253,7 @@ h1 {
 
 .aside {
   width: 50%;
+  min-width: 185px;
   margin-bottom: 30px;
 }
 
@@ -232,6 +289,15 @@ h1 {
 
 * {
   box-sizing: border-box;
+}
+
+@media only screen and (max-width: 520px) {
+  .content {
+    width: 100vw;
+  }
+  .content .links {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
