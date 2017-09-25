@@ -26,11 +26,20 @@ body {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 5%;
+  position: relative;
+  height:100vh;
 }
 // aside{
 // z-index:10;
 // }
-
+/*
+.wrapper{
+  // width: 100%;
+  // height: 100%;
+  min-height:100%;
+   position:relative;
+}
+*/
 h1 {
   width: 88%;
   height: 80px;
@@ -53,7 +62,7 @@ h1 {
 .asideInfo {
   width: 30vw;
   max-width: 900px;
-  height: 60vh;
+  height: 65vh;//zmiany bylo 70
   max-height: 1024px;
   padding: 15px;
   margin-right: 10px;
@@ -69,7 +78,7 @@ h1 {
   // width: 50vw;
   width: 40vw;
   max-width: 1200px;
-  height: 60vh;
+  height: 65vh;//zmiany było 70
   max-height: 1024px;
   // overflow: hidden;
   overflow: auto;
@@ -109,6 +118,7 @@ h1 {
   box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
   padding: 5px;
   color: $main-color;
+  position: relative;//changes
 
   &:link {
     text-decoration: none;
@@ -127,15 +137,51 @@ h1 {
   min-width: 185px;
   margin-bottom: 30px;
 }
+//changes
+.icons{
+  position:absolute;
+  top: 5px;
+  right: 5px;
+}
+//changes logo
+.logo{
+position: absolute;
+bottom: 15px;
+left: 15px;
+width: 100%;
+max-width:150px;
+height: auto;
+// height: 150px;
+}
 //*********************************************
 //************* media queries *****************
 //*********************************************
+
 @media only screen and (max-width:520px) {
+  // body height: 100% solved problem with floating footer/logo img
+  // (it was in mid of the small screens) -
+  //now it is sticking to the bottom of the page (phones); for big screens 100vh is ok.
+  body{
+    height: 100%;
+  }
   .asideInfo,
   .box,
   .container {
     width: 100%;
   }
+  .linkIcon{
+    font-size: 1em;
+  }
+  .icons{
+    padding:5px;
+  }
+  .logo{
+    // bottom:10px;
+    bottom: -7%;
+    left: 10px;
+    max-width: 60px;
+  }
+
   //ie flex problem - work fine only after refresh or window resize - there is a tip to add
   // min-width to an element, but it is not optimal solution...
   // .box{
@@ -147,7 +193,6 @@ h1 {
   .container {
     width: 47%;
   }
-
   .box {
     width: 100%;
   }
@@ -158,6 +203,9 @@ h1 {
   }
 }
 @media only screen and (min-width:1025px) and (max-width:1280px) {
+  .box{
+    width:90%;
+  }
   .aside {
     width: 95%;
   }
