@@ -1,3 +1,22 @@
+.linkHeader {
+  width: 88%;
+  height: 80px;
+  font-size: 1.3rem;
+  text-transform: uppercase;
+  text-align: center;
+  border-radius: 5px;
+  margin-bottom: 45px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  color: #c3eaf3;
+  font-weight: bold;
+}
+
 .content {
   width: 70vw;
   max-width: 1200px;
@@ -301,6 +320,81 @@ h1 {
   .content .links {
     width: 100%;
   }
+}
+
+.phoneWrapper {
+  padding: 20px;
+}
+
+.phoneLinks {
+  width: 40%;
+}
+
+.phoneLinks p:nth-child(2) {
+  text-align: center;
+  border: 2px dashed rgba(27, 121, 182, 0.8);
+  border-radius: 5px;
+  padding: 5px;
+}
+
+.linkHeader {
+  width: 100%;
+  height: auto;
+  font-size: 0.95em;
+  margin-bottom: 6%;
+}
+
+.hospitalLink {
+  height: 20%;
+  max-height: 200px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.1em;
+}
+
+.numberInfo {
+  font-size: 0.9em;
+}
+
+.numberInfo:not(:nth-child(2)) {
+  height: 18px;
+  text-align: left;
+}
+
+.numberInfo span {
+  font-size: 1.1em;
+}
+
+.innerPhones {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.innerPhones div {
+  width: 30%;
+  height: auto;
+  margin-top: 20px;
+  line-height: 30px;
+}
+
+.innerPhones .arrows img {
+  display: block;
+  max-width: 45px;
+  height: 23px;
+  margin: 0 auto;
 }
 
 /*# sourceMappingURL=main.css.map */
