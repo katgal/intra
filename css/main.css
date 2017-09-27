@@ -328,6 +328,7 @@ h1 {
 
 .phoneLinks {
   width: 40%;
+  max-width: 470px;
 }
 
 .phoneLinks p:nth-child(2) {
@@ -357,6 +358,7 @@ h1 {
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1em;
+  line-height: 25px;
 }
 
 .numberInfo {
@@ -386,8 +388,12 @@ h1 {
 .innerPhones div {
   width: 30%;
   height: auto;
-  margin-top: 20px;
+  margin-top: 12%;
   line-height: 30px;
+}
+
+.innerPhones .arrows {
+  margin-top: 20px;
 }
 
 .innerPhones .arrows img {
@@ -395,6 +401,52 @@ h1 {
   max-width: 45px;
   height: 23px;
   margin: 0 auto;
+}
+
+.cursor {
+  cursor: default;
+}
+
+.bottomInfo,
+.topInfo {
+  font-size: 0.8em;
+}
+
+.bottomInfo span,
+.topInfo span {
+  font-weight: bold;
+}
+
+@media only screen and (max-width: 450px) {
+  .innerPhones div:not(.arrows) {
+    font-size: 0.9em;
+  }
+  .arrows img {
+    width: 35px;
+    height: 18px;
+  }
+}
+
+@media only screen and (max-width: 623px) {
+  .phoneLinks,
+  .phoneWrapper {
+    width: 100%;
+  }
+  .phoneLinks {
+    margin: 0 0 20px;
+  }
+}
+
+@media only screen and (min-width: 624px) and (max-width: 1280px) {
+  .phoneLinks {
+    width: 100%;
+  }
+}
+
+@media only screen and (min-width: 521px) and (max-width: 830px) {
+  .logo {
+    max-width: 80px;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

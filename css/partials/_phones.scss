@@ -1,19 +1,19 @@
 
 //made by katgal, september 2017
 
-.phoneWrapper{
+.phoneWrapper {
   padding: 20px;
 }
 
 .phoneLinks {
   width: 40%;
-  // margin: 0 auto;
+  max-width: 470px; //for explorer flex problem
+
   p:nth-child(2) {
     text-align: center;
     // border: 2px dashed $main-color;
     // border: 2px dashed rgba(217, 38, 28, 0.4); // red from logo
     border: 2px dashed rgba($minor1-color, 0.8);
-
     border-radius: 5px;
     padding: 5px;
   }
@@ -40,6 +40,7 @@
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1em;
+  line-height: 25px; // added
 }
 
 .numberInfo {
@@ -55,7 +56,7 @@
   }
 }
 
-.innerPhones{
+.innerPhones {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -65,20 +66,70 @@
   align-items: center;
   flex-wrap: wrap;
 
-
-  div{
-  width:30%;
-  height: auto;
-  margin-top: 20px;
-  line-height: 30px;
+  div {
+    width: 30%;
+    height: auto;
+    margin-top: 12%;
+    line-height: 30px;
   }
-  .arrows{
+
+  .arrows {
+    margin-top: 20px;
+
     img {
-    // width:100%;
-    display: block;
-    max-width: 45px;
-    height:23px;
-    margin: 0 auto;
+      display: block;
+      max-width: 45px;
+      height: 23px;
+      margin: 0 auto;
     }
+  }
+}
+
+.cursor {
+  cursor: default;
+}
+
+.bottomInfo,
+.topInfo {
+  font-size: 0.8em;
+
+  span {
+    font-weight: bold;
+  }
+}
+//*********************************************
+//************* media queries *****************
+//*********************************************
+@media only screen and (max-width:450px) {
+  .innerPhones div:not(.arrows) {
+    font-size: 0.9em;
+  }
+
+  .arrows {
+    img {
+      width: 35px;
+      height: 18px;
+    }
+  }
+}
+@media only screen and (max-width:623px) {//diffrent value
+  // .content, .links{//duplicate from @media _mainPage
+  .phoneLinks,
+  .phoneWrapper {
+    width: 100%;
+  }
+
+  .phoneLinks {
+    margin: 0 0 20px;
+  }
+}
+@media only screen and (min-width:624px) and (max-width:1280px) {
+  .phoneLinks {
+    width: 100%;
+  }
+}
+@media only screen and (min-width:521px) and (max-width: 830px) {
+  .logo {
+    max-width: 80px;
   }
 }
