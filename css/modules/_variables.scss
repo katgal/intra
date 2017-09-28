@@ -33,6 +33,7 @@ $minor4-color: rgb(30,136, 186);
   -ms-flex-align: start;
   align-items: flex-start;
   padding: 5%;
+  //position relative for logo positioning
   position: relative;
   height:100vh;
 }
@@ -61,7 +62,7 @@ $minor4-color: rgb(30,136, 186);
 %mainContainer {
   width: 70vw;
   max-width: 1200px;
-  height: 65vh; //zmiany bylo 70
+  height: 65vh; //initial value was 70
   max-height: 1024px;
   overflow: auto;
   padding: 30px;
@@ -103,10 +104,9 @@ $minor4-color: rgb(30,136, 186);
     box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
     background-color: rgba($accent-color, 0.4);
     color: lighten($main-color, 30%);
-    // font-weight:600;
   }
 }
-//zrobic zmainy do rwd
+
 %logo{
   position: absolute;
   bottom: 15px;
@@ -116,6 +116,18 @@ $minor4-color: rgb(30,136, 186);
   height: auto;
 }
 
+//flex center content
+%flexCenter{
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack:center;
+  -ms-flex-pack: center;
+  justify-content: center;
+  align-items: center;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
 
 // $smartphones: "(min-width : 320px) and (max-width : 480px)";
 // $bigger-smartphones: "(min-width : 481px) and (max-width : 767px)";

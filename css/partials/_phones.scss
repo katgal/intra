@@ -7,7 +7,8 @@
 
 .phoneLinks {
   width: 40%;
-  max-width: 470px; //for explorer flex problem
+  //for explorer flex problem
+  max-width: 470px;
 
   p:nth-child(2) {
     text-align: center;
@@ -64,6 +65,7 @@
   -ms-flex-pack: center;
   justify-content: center;
   align-items: center;
+  -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
   div {
