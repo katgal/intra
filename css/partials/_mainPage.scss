@@ -71,15 +71,11 @@ h1 {
 }
 
 .container {
-  background-color: rgba($additional-color, 0.3);
   background-color: transparent;
-  background-repeat: no-repeat;
-  background-attachment: fixed;
   width: 40vw;
   max-width: 1200px;
   height: 65vh;//initial value was 70
   max-height: 1024px;
-  // overflow: hidden;
   overflow: auto;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -116,7 +112,7 @@ h1 {
   padding: 5px;
   color: $main-color;
   // for icons positioning
-  position: relative;//changes
+  position: relative;
 
   &:link {
     text-decoration: none;
@@ -135,22 +131,51 @@ h1 {
   margin-bottom: 30px;
 }
 
-//changes
 .icons{
   position:absolute;
   top: 5px;
   right: 5px;
 }
 
-//changes logo
 .logo{
-position: absolute;
-bottom: 15px;
-left: 15px;
-width: 100%;
-max-width:150px;
-height: auto;
+@extend %logo;
 }
+
+///////////////////////////
+//custom scrollbar
+///////////////////////////
+//firefox is not supported
+//it is better to avoid custom scrollbars written in javascript
+//jquery plugins didnt work properly (flexbox issues, have to set min-height)
+
+// chrome and opera
+::-webkit-scrollbar {
+    width: 6px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgba(0,0,0,0.2);
+    border-radius: 10px;
+    width: 3px;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: rgba($additional-color, 0.6);
+}
+
+//internet explorer
+body{
+  scrollbar-base-color: $additional-color;
+  scrollbar-face-color: $additional-color;
+  scrollbar-highlight-color:$additional-color;
+  scrollbar-shadow-color: $additional-color;
+  scrollbar-track-color:  rgb(72,179, 212);
+  scrollbar-3dlight-color:  $additional-color;
+  scrollbar-darkshadow-color: $additional-color;
+  scrollbar-arrow-color:  $additional-color;
+}
+
 //*********************************************
 //************* media queries *****************
 //*********************************************
