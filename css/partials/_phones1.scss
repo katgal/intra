@@ -7,3 +7,41 @@ h3 {
   width: 70vw;
   font-size: 1rem;
 }
+
+.accordionWrapper {
+  width: 100%;
+  // width:80%;
+  height: auto;
+}
+
+.accordion {
+  text-align: left;
+  margin: 0 auto; // position: relative;
+  transition: 1s;
+
+  &.active {
+    box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
+    background-color: rgba($accent-color, 0.4);
+    color: lighten($main-color, 30%);
+  }
+
+  &::after {
+    content: '\002B';
+    float: right;
+  }
+
+  &.active::after {
+    content: "\2212";
+  }
+}
+
+.panel {
+  display: none;
+  // max-height: 0;
+    // overflow: hidden;
+    // transition: max-height 0.2s ease-out;
+  p {
+    margin: 0 auto;
+    width: 80%;
+  }
+}

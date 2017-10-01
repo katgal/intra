@@ -481,4 +481,39 @@ h3 {
   font-size: 1rem;
 }
 
+.accordionWrapper {
+  width: 100%;
+  height: auto;
+}
+
+.accordion {
+  text-align: left;
+  margin: 0 auto;
+  transition: 1s;
+}
+
+.accordion.active {
+  box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
+  background-color: rgba(72, 179, 212, 0.4);
+  color: white;
+}
+
+.accordion::after {
+  content: '\002B';
+  float: right;
+}
+
+.accordion.active::after {
+  content: "\2212";
+}
+
+.panel {
+  display: none;
+}
+
+.panel p {
+  margin: 0 auto;
+  width: 80%;
+}
+
 /*# sourceMappingURL=main.css.map */
