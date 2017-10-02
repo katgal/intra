@@ -84,7 +84,7 @@ small, strike, strong, sub, sup, tt, var,
 b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
+table, caption, tbody, tfoot, thead,
 article, aside, canvas, details, embed,
 figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
@@ -119,11 +119,6 @@ blockquote:before, blockquote:after,
 q:before, q:after {
   content: '';
   content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
 }
 
 * {
@@ -475,10 +470,32 @@ body {
   }
 }
 
+.exeption {
+  margin-top: -30px;
+}
+
 h3 {
-  background-color: rgba(217, 38, 28, 0.4);
+  background-color: rgba(217, 38, 28, 0.7);
   width: 70vw;
   font-size: 1rem;
+}
+
+.main {
+  max-width: none;
+  max-height: none;
+}
+
+.groupHeader {
+  width: 70%;
+  text-align: center;
+  color: #c3eaf3;
+  font-size: 1.2em;
+  margin-top: 10px;
+}
+
+hr {
+  width: 70%;
+  border-width: 2px;
 }
 
 .accordionWrapper {
@@ -488,8 +505,9 @@ h3 {
 
 .accordion {
   text-align: left;
-  margin: 0 auto;
-  transition: 1s;
+  margin: 10px auto;
+  width: 70%;
+  cursor: pointer;
 }
 
 .accordion.active {
@@ -509,11 +527,51 @@ h3 {
 
 .panel {
   display: none;
+  width: 70%;
+  margin: 0 auto;
+  padding: 10px;
 }
 
-.panel p {
-  margin: 0 auto;
+.panel table, .panel th, .panel td {
+  border: 2px solid #c3eaf3;
+  border-collapse: collapse;
+}
+
+.panel table {
+  width: 100%;
+  color: #c3eaf3;
+  box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+.panel table:hover {
+  background-color: rgba(72, 179, 212, 0.4);
+  color: white;
+}
+
+.panel table th {
+  height: 60px;
+}
+
+.panel table th.mainWidth {
   width: 80%;
+}
+
+.panel table th.minorWidth {
+  width: 20%;
+}
+
+.panel table td {
+  line-height: 25px;
+}
+
+.panel table td:nth-child(even) {
+  text-align: center;
+}
+
+@media only screen and (max-width: 520px) {
+  .panel {
+    width: 100%;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */

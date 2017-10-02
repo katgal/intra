@@ -1,13 +1,31 @@
 
 //made by katgal, september 2017
+.exeption{
+  margin-top: -30px;
+}
 
 h3 {
   @extend %header;
-  background-color: rgba(217, 38, 28, 0.4);
+  background-color: rgba($minor5-color, 0.7);
   width: 70vw;
   font-size: 1rem;
 }
+.main{
+  max-width: none;
+  max-height: none;
+}
 
+.groupHeader{
+  width: 70%;
+  text-align: center;
+  color: $main-color;
+  font-size: 1.2em;
+  margin-top: 10px
+}
+hr{
+  width:70%;
+  border-width: 2px;
+}
 .accordionWrapper {
   width: 100%;
   // width:80%;
@@ -16,8 +34,10 @@ h3 {
 
 .accordion {
   text-align: left;
-  margin: 0 auto; // position: relative;
-  transition: 1s;
+  margin: 10px auto;
+  // transition: 1s;
+  width: 70%;
+  cursor: pointer;
 
   &.active {
     box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
@@ -37,11 +57,53 @@ h3 {
 
 .panel {
   display: none;
+  width:70%;
+  margin: 0 auto;
+  padding: 10px;
   // max-height: 0;
     // overflow: hidden;
     // transition: max-height 0.2s ease-out;
-  p {
-    margin: 0 auto;
-    width: 80%;
+  table, th, td {
+    border: 2px solid $main-color;
+    border-collapse: collapse;// need think about that a little bit more / reset default
   }
+  table{
+    // margin: 0 auto;
+    width: 100%;
+    color: $main-color;
+    box-shadow: 1px 10px 20px 0 rgba($additional2-color, 0.3);
+    // background-color: rgba($minor1-color, 0.5);//for better visibility
+    &:hover{
+      background-color: rgba($accent-color, 0.4);
+      color: lighten($main-color, 30%);
+    }
+    th{
+      height: 60px;
+      &.mainWidth{
+        width: 80%;
+      }
+      &.minorWidth{
+        width:20%;
+      }
+    }
+    td{
+      line-height: 25px;
+      &:nth-child(even){
+        text-align: center;
+      }
+    }
+  }
+}
+
+//*********************************************
+//************* media queries *****************
+//*********************************************
+
+@media only screen and (max-width:520px){
+  .panel{
+    width:100%;
+  }
+}
+@media only screen and (min-width:521px) and (max-width:767px){
+
 }
