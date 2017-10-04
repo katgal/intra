@@ -1,41 +1,51 @@
 
 //made by katgal, september 2017
-.exeption{
+
+.exeption {
   margin-top: -30px;
 }
-
+.exeptionHeader{
+  margin-bottom: 20px;
+}
 h3 {
   @extend %header;
   background-color: rgba($minor5-color, 0.7);
   width: 70vw;
   font-size: 1rem;
 }
-.main{
+
+.main {
   max-width: none;
   max-height: none;
 }
 
-.groupHeader{
+.groupHeader {
   width: 70%;
   text-align: center;
   color: $main-color;
   font-size: 1.2em;
-  margin-top: 10px
+  margin-top: 10px;
+  text-transform: capitalize;
 }
-hr{
-  width:70%;
-  border-width: 2px;
+
+hr {
+  width: 70%;
+  border-width: 0.5px;
+  border-color: rgba($minor2-color, 0.7);
+  // border-color:rgba($minor4-color, 0.6);
 }
+//*********************************************
+//********* ACCORDION STYLING *****************
+//*********************************************
+
 .accordionWrapper {
   width: 100%;
-  // width:80%;
   height: auto;
 }
 
 .accordion {
   text-align: left;
   margin: 10px auto;
-  // transition: 1s;
   width: 70%;
   cursor: pointer;
 
@@ -46,7 +56,7 @@ hr{
   }
 
   &::after {
-    content: '\002B';
+    content: "\002B";
     float: right;
   }
 
@@ -57,53 +67,86 @@ hr{
 
 .panel {
   display: none;
-  width:70%;
+  width: 70%;
   margin: 0 auto;
-  padding: 10px;
+  padding: 0 10px 10px 10px;
   // max-height: 0;
-    // overflow: hidden;
-    // transition: max-height 0.2s ease-out;
-  table, th, td {
-    border: 2px solid $main-color;
-    border-collapse: collapse;// need think about that a little bit more / reset default
-  }
-  table{
-    // margin: 0 auto;
+  // overflow: hidden;
+  // transition: max-height 0.2s ease-out;
+
+//*********************************************
+//************** TABLES ***********************
+
+  table {
     width: 100%;
     color: $main-color;
     box-shadow: 1px 10px 20px 0 rgba($additional2-color, 0.3);
+    //border-collapse:collapse does not mix with border-radius
+    //now border-collapse property is set to separate
+    //and everything is working fine
+    border-radius: 5px;
     // background-color: rgba($minor1-color, 0.5);//for better visibility
-    &:hover{
+
+    // internet explorer is not showing box-shadow on tables when border-collapse: collapse;
+    // so I switched it in _reset to separate
+    // or I just can turn border-collapse off, it will work also properly
+    &:hover {
       background-color: rgba($accent-color, 0.4);
       color: lighten($main-color, 30%);
     }
-    th{
+
+    td,
+    th {
+      border-bottom: 2px dashed rgba($minor4-color, 0.6);
+      border-left: 2px dashed rgba($minor4-color, 0.6);
+    }
+
+    th {
       height: 60px;
-      &.mainWidth{
+
+      &.mainWidth {
         width: 80%;
       }
-      &.minorWidth{
-        width:20%;
+
+      &.minorWidth {
+        width: 20%;
       }
     }
-    td{
+
+    td {
       line-height: 25px;
-      &:nth-child(even){
+      &:first-child{
+        padding-left: 20px;
+      }
+
+      &:nth-child(even) {
         text-align: center;
       }
     }
+
+    td:first-child,
+    th:first-child {
+      border-left: 0;
+    }
+    .singleTab,
+    tr:last-child td {
+      border-bottom: 0;
+    }
   }
+}
+//*********************************************
+//******* LOGO PHONES SUBPAGES ****************
+.exeptionLogo{
+  bottom: 0;
+  left: 30px;
 }
 
 //*********************************************
 //************* media queries *****************
 //*********************************************
-
-@media only screen and (max-width:520px){
-  .panel{
-    width:100%;
+@media only screen and (max-width:520px) {
+  .panel {
+    width: 100%;
   }
 }
-@media only screen and (min-width:521px) and (max-width:767px){
-
-}
+@media only screen and (min-width:521px) and (max-width:767px) {}

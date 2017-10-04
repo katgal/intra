@@ -121,6 +121,11 @@ q:before, q:after {
   content: none;
 }
 
+table {
+  border-collapse: separate;
+  border-spacing: 0;
+}
+
 * {
   box-sizing: border-box;
 }
@@ -474,6 +479,10 @@ body {
   margin-top: -30px;
 }
 
+.exeptionHeader {
+  margin-bottom: 20px;
+}
+
 h3 {
   background-color: rgba(217, 38, 28, 0.7);
   width: 70vw;
@@ -491,11 +500,13 @@ h3 {
   color: #c3eaf3;
   font-size: 1.2em;
   margin-top: 10px;
+  text-transform: capitalize;
 }
 
 hr {
   width: 70%;
-  border-width: 2px;
+  border-width: 0.5px;
+  border-color: rgba(37, 158, 195, 0.7);
 }
 
 .accordionWrapper {
@@ -517,7 +528,7 @@ hr {
 }
 
 .accordion::after {
-  content: '\002B';
+  content: "\002B";
   float: right;
 }
 
@@ -529,23 +540,25 @@ hr {
   display: none;
   width: 70%;
   margin: 0 auto;
-  padding: 10px;
-}
-
-.panel table, .panel th, .panel td {
-  border: 2px solid #c3eaf3;
-  border-collapse: collapse;
+  padding: 0 10px 10px 10px;
 }
 
 .panel table {
   width: 100%;
   color: #c3eaf3;
   box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
 }
 
 .panel table:hover {
   background-color: rgba(72, 179, 212, 0.4);
   color: white;
+}
+
+.panel table td,
+.panel table th {
+  border-bottom: 2px dashed rgba(30, 136, 186, 0.6);
+  border-left: 2px dashed rgba(30, 136, 186, 0.6);
 }
 
 .panel table th {
@@ -564,8 +577,27 @@ hr {
   line-height: 25px;
 }
 
+.panel table td:first-child {
+  padding-left: 20px;
+}
+
 .panel table td:nth-child(even) {
   text-align: center;
+}
+
+.panel table td:first-child,
+.panel table th:first-child {
+  border-left: 0;
+}
+
+.panel table .singleTab,
+.panel table tr:last-child td {
+  border-bottom: 0;
+}
+
+.exeptionLogo {
+  bottom: 0;
+  left: 30px;
 }
 
 @media only screen and (max-width: 520px) {
