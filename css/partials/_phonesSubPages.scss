@@ -47,6 +47,7 @@ hr {
   text-align: left;
   margin: 10px auto;
   width: 70%;
+  max-width: 1200px;
   cursor: pointer;
 
   &.active {
@@ -68,6 +69,7 @@ hr {
 .panel {
   display: none;
   width: 70%;
+  max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px 10px 10px;
   // max-height: 0;
@@ -103,6 +105,7 @@ hr {
 
     th {
       height: 60px;
+      padding: 5px;
 
       &.mainWidth {
         width: 80%;
@@ -137,16 +140,36 @@ hr {
 //*********************************************
 //******* LOGO PHONES SUBPAGES ****************
 .exeptionLogo{
-  bottom: 0;
-  left: 30px;
+  // bottom: 0;
+  // left: 30px;
+  bottom: -15px;
+  left: 15px;
 }
 
 //*********************************************
 //************* media queries *****************
 //*********************************************
 @media only screen and (max-width:520px) {
+  .exeptionH3{
+    width: 100vw;
+  }
   .panel {
     width: 100%;
   }
 }
-@media only screen and (min-width:521px) and (max-width:767px) {}
+@media only screen and (min-width:521px) and (max-width:767px) {
+.accordion{
+  width: 100%;
+}
+.panel{
+  width: 100%;
+}
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px){
+  .accordion{
+    width: 80%;
+  }
+  .panel{
+    width: 80%;
+  }
+}
