@@ -1,0 +1,29 @@
+
+//made by katgal, september 2017
+
+.downloadStructure {
+  width: 110px;
+  height: 60px;
+  z-index: 10;
+  position: absolute;
+  top: 0;
+  left: 0;
+  margin: 0;
+  padding: 3px;
+  font-size: 1em;
+  @extend %links;
+
+  img {
+    margin: 5px;
+  }
+}
+
+.regulations {
+  height: 80px;
+  top: 65px;
+  padding: 5px;
+}
+// .content{
+// -ms-flex-wrap: no wrap;
+// flex-wrap: no wrap;
+// }
