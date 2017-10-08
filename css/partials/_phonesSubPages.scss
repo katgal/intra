@@ -29,10 +29,9 @@ h3 {
 }
 
 hr {
-  width: 70%;
+  width: 50%;
   border-width: 0.5px;
   border-color: rgba($minor2-color, 0.7);
-  // border-color:rgba($minor4-color, 0.6);
 }
 //*********************************************
 //********* ACCORDION STYLING *****************
@@ -72,9 +71,6 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px 10px 10px;
-  // max-height: 0;
-  // overflow: hidden;
-  // transition: max-height 0.2s ease-out;
 
 //*********************************************
 //************** TABLES ***********************
@@ -140,8 +136,6 @@ hr {
 //*********************************************
 //******* LOGO PHONES SUBPAGES ****************
 .exeptionLogo{
-  // bottom: 0;
-  // left: 30px;
   bottom: -15px;
   left: 15px;
 }

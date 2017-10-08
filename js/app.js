@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+/*document.addEventListener("DOMContentLoaded", function() {
 
   var accordionButton = document.querySelectorAll(".accordion");
 
@@ -14,19 +14,35 @@ document.addEventListener("DOMContentLoaded", function() {
       } else {
         sibling.style.display = "block";
       }
-/*
+
       var panel = this.nextElementSibling;
       if (panel.style.maxHeight){
       panel.style.maxHeight = null;
     } else {
       panel.style.maxHeight = panel.scrollHeight + "px";
       }
-*/
+
 
 
 
     });
 
   }
+
+});
+*/
+$(document).ready(function() {
+
+  function accordion() {
+    var accordion = $(".accordionWrapper").find(".accordion");
+    var panel = $(".accordionWrapper").find(".panel");
+
+    accordion.on("click", function() {
+      $(this).toggleClass("active");
+      $(this).next().finish().slideToggle("slow");
+    });
+  }
+  accordion();
+
 
 });
