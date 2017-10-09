@@ -4,9 +4,11 @@
 .exeption {
   margin-top: -30px;
 }
-.exeptionHeader{
+
+.exeptionHeader {
   margin-bottom: 20px;
 }
+
 h3 {
   @extend %header;
   background-color: rgba($minor5-color, 0.7);
@@ -70,10 +72,10 @@ hr {
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px;
 
-//*********************************************
-//************** TABLES ***********************
+  //*********************************************
+  //************** TABLES ***********************
 
   table {
     width: 100%;
@@ -84,13 +86,16 @@ hr {
     //and everything is working fine
     border-radius: 5px;
     // background-color: rgba($minor1-color, 0.5);//for better visibility
-
     // internet explorer is not showing box-shadow on tables when border-collapse: collapse;
     // so I switched it in _reset to separate
     // or I just can turn border-collapse off, it will work also properly
     &:hover {
       background-color: rgba($accent-color, 0.4);
-      color: lighten($main-color, 30%);
+      color: lighten($main-color, 30%);//ISO tables
+      //for ISO tables
+      a {
+        color: lighten($main-color, 30%);
+      }
     }
 
     td,
@@ -114,7 +119,23 @@ hr {
 
     td {
       line-height: 25px;
-      &:first-child{
+      //for ISO tables
+      a {
+        color: $main-color;
+        width:100%;//// zabawa z calym td do pobierania
+        display:block;/////zabawa z całym td
+
+        &:link {
+          text-decoration: none;
+        }
+
+        &:hover {
+          font-weight: bold;
+          color: rgba($minor5-color, 0.7);
+        }
+      }
+      // ////////
+      &:first-child {
         padding-left: 20px;
       }
 
@@ -127,6 +148,7 @@ hr {
     th:first-child {
       border-left: 0;
     }
+
     .singleTab,
     tr:last-child td {
       border-bottom: 0;
@@ -135,35 +157,38 @@ hr {
 }
 //*********************************************
 //******* LOGO PHONES SUBPAGES ****************
-.exeptionLogo{
+
+.exeptionLogo {
   bottom: -15px;
   left: 15px;
 }
-
 //*********************************************
 //************* media queries *****************
 //*********************************************
 @media only screen and (max-width:520px) {
-  .exeptionH3{
+  .exeptionH3 {
     width: 100vw;
   }
+
   .panel {
     width: 100%;
   }
 }
 @media only screen and (min-width:521px) and (max-width:767px) {
-.accordion{
-  width: 100%;
+  .accordion {
+    width: 100%;
+  }
+
+  .panel {
+    width: 100%;
+  }
 }
-.panel{
-  width: 100%;
-}
-}
-@media only screen and (min-width: 768px) and (max-width: 1024px){
-  .accordion{
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .accordion {
     width: 80%;
   }
-  .panel{
+
+  .panel {
     width: 80%;
   }
 }

@@ -542,7 +542,7 @@ hr {
   width: 70%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 10px 10px 10px;
+  padding: 0 10px 10px;
 }
 
 .panel table {
@@ -554,6 +554,10 @@ hr {
 
 .panel table:hover {
   background-color: rgba(72, 179, 212, 0.4);
+  color: white;
+}
+
+.panel table:hover a {
   color: white;
 }
 
@@ -578,6 +582,21 @@ hr {
 
 .panel table td {
   line-height: 25px;
+}
+
+.panel table td a {
+  color: #c3eaf3;
+  width: 100%;
+  display: block;
+}
+
+.panel table td a:link {
+  text-decoration: none;
+}
+
+.panel table td a:hover {
+  font-weight: bold;
+  color: rgba(217, 38, 28, 0.7);
 }
 
 .panel table td:first-child {
