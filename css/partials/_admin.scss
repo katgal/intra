@@ -23,7 +23,88 @@
   top: 65px;
   padding: 5px;
 }
-// .content{
-// -ms-flex-wrap: no wrap;
-// flex-wrap: no wrap;
-// }
+//*********************************************
+//******** ADMINISTRATIVE STRUCTURE ***********
+//*********************************************
+
+.structure {
+  width: 25%;
+  height: 20%;
+  min-height: 120px;
+  max-height: 130px;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  line-height: 20px;
+  padding: 15px;
+
+  &.managers {
+    width: 20%;
+  }
+
+  &:first-child {
+    padding: 20px;
+
+    span {
+      text-transform: uppercase;
+    }
+  }
+
+  span {
+    margin-top: 5px;
+    width: 100%;
+    text-transform: capitalize;
+  }
+}
+
+.directorSeperator {
+  width: 85%;
+  margin: 30px;
+}
+//*********************************************
+//************* media queries *****************
+//*********************************************
+@media only screen and (max-width:520px) {
+  .structure {
+    width: 100%;
+    height: auto;
+    min-height: 110px;
+    font-size: 1em;
+
+    &.managers {
+      width: 100%;
+    }
+  }
+}
+@media only screen and (min-width:521px) and (max-width:767px) {
+  .administrationBox {
+    width: 100vw;
+
+    .structure {
+      width: 42%;
+      padding: 10px;
+    }
+  }
+}
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
+  .administrationBox {
+    width: 85vw;
+
+    .structure {
+      width: 42%;
+
+      &.managers {
+        width: 28%;
+        padding: 0;
+      }
+    }
+  }
+}
+@media only screen and (min-width:1025px) and (max-width:1350px) {
+  .structure {
+    width: 35%;
+
+    &.managers {
+      width: 27%;
+    }
+  }
+}
