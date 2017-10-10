@@ -119,11 +119,11 @@ hr {
 
     td {
       line-height: 25px;
-      //for ISO tables
+      //tables for ISO
       a {
         color: $main-color;
-        width:100%;//// zabawa z calym td do pobierania
-        display:block;/////zabawa z całym td
+        width:100%;
+        display:block;
 
         &:link {
           text-decoration: none;
@@ -134,7 +134,7 @@ hr {
           color: rgba($minor5-color, 0.7);
         }
       }
-      // ////////
+      // ISO end
       &:first-child {
         padding-left: 20px;
       }

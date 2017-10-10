@@ -1,18 +1,7 @@
 
 //made by katgal, september 2017
 
-* {
-  box-sizing: border-box;
-}
-//duplikat z mainPage
-// body {
-  // @extend %body;
-// }
-//duplikat z mainPage
-// h1 {
-  // @extend %header;
-// }
-
+// <body>, <h1> and .logo are already styled in _mainPage.scss
 
 .content {
   @extend %mainContainer;
@@ -21,9 +10,7 @@
 .links {
   @extend %links;
 }
-// .logo{
-  // @extend %logo;
-// }
+
 
 //*********************************************
 //************* media queries *****************

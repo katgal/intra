@@ -29,17 +29,11 @@
 .hospitalLink {
   height: 20%;
   max-height: 200px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  align-items: center;
+  @extend %flexCenter;
   text-transform: uppercase;
   font-weight: bold;
   font-size: 1.1em;
-  line-height: 25px; // added
+  line-height: 25px;
 }
 
 .numberInfo {
@@ -56,13 +50,7 @@
 }
 
 .innerPhones {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  justify-content: center;
-  align-items: center;
+  @extend %flexCenter;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
 
@@ -112,8 +100,7 @@
     }
   }
 }
-@media only screen and (max-width:623px) {//diffrent value
-  // .content, .links{//duplicate from @media _mainPage
+@media only screen and (max-width:623px) {
   .phoneLinks,
   .phoneWrapper {
     width: 100%;
