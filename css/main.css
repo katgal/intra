@@ -648,9 +648,9 @@ hr {
 
 .structure {
   width: 25%;
-  height: 20%;
-  min-height: 120px;
-  max-height: 130px;
+  height: auto;
+  min-height: 130px;
+  max-height: 200px;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   line-height: 20px;
@@ -681,10 +681,9 @@ hr {
   margin: 30px;
 }
 
-@media only screen and (max-width: 520px) {
+@media only screen and (max-width: 545px) {
   .structure {
     width: 100%;
-    height: auto;
     min-height: 110px;
     font-size: 1em;
   }
@@ -693,7 +692,7 @@ hr {
   }
 }
 
-@media only screen and (min-width: 521px) and (max-width: 767px) {
+@media only screen and (min-width: 546px) and (max-width: 780px) {
   .administrationBox {
     width: 100vw;
   }
@@ -703,9 +702,9 @@ hr {
   }
 }
 
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
+@media only screen and (min-width: 781px) and (max-width: 1024px) {
   .administrationBox {
-    width: 85vw;
+    width: 90vw;
   }
   .administrationBox .structure {
     width: 42%;
