@@ -36,9 +36,6 @@
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-}
-
-.content:hover {
   box-shadow: 0 1px 10px 2px rgba(132, 208, 234, 0.2);
 }
 
@@ -211,15 +208,41 @@ h1 {
   flex-wrap: wrap;
   padding: 30px;
   border-radius: 5px;
-}
-
-.container:hover {
+  position: relative;
   box-shadow: 0 1px 10px 2px rgba(132, 208, 234, 0.2);
 }
 
+.container a:nth-child(even) {
+  margin-top: 30px;
+}
+
+.container a:nth-child(odd) {
+  transform: rotate(-3deg);
+}
+
+.container a:nth-child(even) {
+  transform: rotate(1deg);
+}
+
+.container a:nth-of-type(5n+3) {
+  transform: rotate(-7deg);
+}
+
+.pin.pin_1 {
+  top: 5px;
+  left: 5px;
+  position: absolute;
+}
+
+.pin.pin_2 {
+  margin-top: 80px;
+}
+
 .box {
-  width: 40%;
+  width: auto;
   height: 25%;
+  min-height: 100px;
+  max-height: 150px;
   min-width: 155px;
   margin: 15px;
   font-size: 1.1em;
@@ -325,6 +348,33 @@ body {
   .aside {
     width: 95%;
   }
+}
+
+@media only screen and (max-width: 1280px) {
+  .pin_2 {
+    margin-left: 120px;
+  }
+}
+
+@media only screen and (min-width: 1281px) and (max-width: 1599px) {
+  .box {
+    width: 40%;
+  }
+  .pin_2 {
+    position: absolute;
+    bottom: 30px;
+    right: 0px;
+  }
+}
+
+@media only screen and (min-width: 2540px) {
+  .container {
+    height: 40vh;
+  }
+}
+
+.content {
+  position: relative;
 }
 
 @media only screen and (max-width: 520px) {
