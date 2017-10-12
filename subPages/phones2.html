@@ -14,6 +14,48 @@
 <body class="exeption">
   <h1 class="exeptionHeader">Szpital przy ul. Nenckiego 2 =&gt 352</h1>
   <h3 class="exeptionH3">Jeżeli jakiś numer telefonu jest nieaktualny, proszę to zgłosić pod numerem 843</h3>
+  <!-- search engine -->
+  <select onchange="location = this.value" id="test">
+      <option value="" disabled selected hidden>
+        Wybierz Oddział
+      </option>
+      <option value="#wybrane_numery">
+        Wybrane Numery Szpitala
+      </option>
+      <option value="#administracja">
+        Administracja
+      </option>
+      <option value="#zakład_opiekunczy">
+        Zakład Opiekuńczo-Leczniczy
+      </option>
+      <option value="#rehabilitacja">
+        Rehabilitacja
+      </option>
+      <option value="#oddzial_gruzlicy">
+        Oddział Gruźlicy i Chorób Płuc
+      </option>
+      <option value="#diagnostyka_obrazowa">
+        Pracownia Diagnostyki Obrazowej
+      </option>
+      <option value="#hospicjum">
+        Ośrodek Hospicyjno-Paliatywny
+      </option>
+      <option value="#pozostale">
+        Pozostałe Numery
+      </option>
+      <option value="#warta">
+        Centrum Psychiatryczne w Warcie
+      </option>
+      <option value="#rafalowka">
+        Rafałówka
+      </option>
+    </select>
+  <!-- reeturn to phone list -->
+  <a href="../SubPages/phones.html" class="return">
+     <img class="download" src="../icons/left-arrow.png" width="50px" height="25px" alt="" title="wróć do spisu telefonów">
+     <span>wróć</span>
+  </a>
+  <!-- main content -->
   <main class="content main">
 
     <!--*******************************-->
@@ -26,7 +68,7 @@
 
     <!-- direct phone numbers -->
     <div class="accordionWrapper">
-      <div class="links accordion">Wybrane Numery Szpitala</div>
+      <div class="links accordion" id="wybrane_numery">Wybrane Numery Szpitala</div>
       <div class="panel">
         <table>
           <tbody>
@@ -83,7 +125,7 @@
     <hr />
     <!-- administration -->
     <div class="accordionWrapper">
-      <div class="links accordion">Administracja Szpitala</div>
+      <div class="links accordion" id="administracja">Administracja Szpitala</div>
       <div class="panel">
         <table>
           <tbody>
@@ -172,7 +214,7 @@
     <hr />
     <!-- Nursing and therapeutic medical plant -->
     <div class="accordionWrapper">
-      <div class="links accordion">Zakład Opiekuńczo - Leczniczy</div>
+      <div class="links accordion" id="zakład_opiekunczy">Zakład Opiekuńczo - Leczniczy</div>
       <div class="panel">
         <table>
           <tbody>
@@ -254,7 +296,7 @@
     </div>
     <!-- rehabilitation -->
     <div class="accordionWrapper">
-      <div class="links accordion">Rehabilitacja</div>
+      <div class="links accordion" id="rehabilitacja">Rehabilitacja</div>
       <div class="panel">
         <table>
           <tbody>
@@ -328,7 +370,7 @@
     </div>
     <!-- Department of tuberculosis and lung diseases -->
     <div class="accordionWrapper">
-      <div class="links accordion">Oddział Gruźlicy i Chorób Płuc</div>
+      <div class="links accordion" id="oddzial_gruzlicy">Oddział Gruźlicy i Chorób Płuc</div>
       <div class="panel">
         <table>
           <tbody>
@@ -394,7 +436,7 @@
     </div>
     <!-- diagnostic laboratory -->
     <div class="accordionWrapper">
-      <div class="links accordion">Pracownia Diagnostyki Obrazowej</div>
+      <div class="links accordion" id="diagnostyka_obrazowa">Pracownia Diagnostyki Obrazowej</div>
       <div class="panel">
         <table>
           <tbody>
@@ -436,7 +478,7 @@
     </div>
     <!-- palliative hospice center -->
     <div class="accordionWrapper">
-      <div class="links accordion">Ośrodek Hospicyjno - Paliatywny</div>
+      <div class="links accordion" id="hospicjum">Ośrodek Hospicyjno - Paliatywny</div>
       <div class="panel">
         <table>
           <tbody>
@@ -461,7 +503,7 @@
     <hr />
     <!-- general -->
     <div class="accordionWrapper">
-      <div class="links accordion">Pozostałe numery telefonów</div>
+      <div class="links accordion" id="pozostale">Pozostałe numery telefonów</div>
       <div class="panel">
         <table>
           <tbody>
@@ -493,7 +535,7 @@
     </h4>
     <hr />
     <div class="accordionWrapper">
-      <div class="links accordion">Centrum Psychiatryczne w Warcie</div>
+      <div class="links accordion" id="warta">Centrum Psychiatryczne w Warcie</div>
       <div class="panel">
         <table>
           <tbody>
@@ -559,7 +601,7 @@
     <hr />
 
     <div class="accordionWrapper">
-      <div class="links accordion">no content</div>
+      <div class="links accordion" id="rafalowka">no content</div>
       <div class="panel">
         <table>
           <tbody>

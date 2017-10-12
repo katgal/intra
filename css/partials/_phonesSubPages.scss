@@ -16,6 +16,50 @@ h3 {
   font-size: 1rem;
 }
 
+select {
+  height: 35px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 10;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: $minor6-color;
+  border-color: $minor6-color;
+  color: $additional-color;
+  box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
+  padding: 5px;
+  cursor: pointer;
+  outline-color: lighten($minor6-color,8%);
+
+  &:hover {
+    box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
+  }
+
+  &:focus {
+    box-shadow: 0 0 3pt 2pt $minor6-color;
+    box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
+  }
+}
+//*********************************************
+//********* Return arrow **** *****************
+
+.return {
+  @extend %links;
+  width: 75px;
+  height: 55px;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+//*********************************************
+//*************** Main content ****************
+
 .main {
   max-width: none;
   max-height: none;
@@ -73,10 +117,8 @@ hr {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 10px 10px;
-
   //*********************************************
   //************** TABLES ***********************
-
   table {
     width: 100%;
     color: $main-color;
@@ -91,7 +133,7 @@ hr {
     // or I just can turn border-collapse off, it will work also properly
     &:hover {
       background-color: rgba($accent-color, 0.4);
-      color: lighten($main-color, 30%);//ISO tables
+      color: lighten($main-color, 30%); //ISO tables
       //for ISO tables
       a {
         color: lighten($main-color, 30%);
@@ -122,8 +164,8 @@ hr {
       //tables for ISO
       a {
         color: $main-color;
-        width:100%;
-        display:block;
+        width: 100%;
+        display: block;
 
         &:link {
           text-decoration: none;
@@ -165,6 +207,35 @@ hr {
 //*********************************************
 //************* media queries *****************
 //*********************************************
+
+//*********************************************
+//******* return icon and select **************
+@media only screen and (max-width:555px) {
+  .return {
+    text-align: left;
+    width: 50px;
+    height: 30px;
+
+    img {
+      width: 35px;
+      height: auto;
+    }
+
+    span {
+      display: none;
+    }
+  }
+}
+@media only screen and (max-width: 890px) {
+  select {
+    position: static;
+    border-color: $minor7-color;
+    background-color: $minor7-color;
+    outline-color: lighten($minor7-color,8%);
+  }
+}
+//*********************************************
+//****** general media query ******************
 @media only screen and (max-width:520px) {
   .exeptionH3 {
     width: 100vw;

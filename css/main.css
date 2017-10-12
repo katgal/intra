@@ -42,7 +42,7 @@
   box-shadow: 0 1px 10px 2px rgba(132, 208, 234, 0.2);
 }
 
-.links, .downloadStructure {
+.links, .return, .downloadStructure {
   width: 80%;
   font-size: 1.2em;
   height: auto;
@@ -54,11 +54,11 @@
   color: #c3eaf3;
 }
 
-.links:link, .downloadStructure:link {
+.links:link, .return:link, .downloadStructure:link {
   text-decoration: none;
 }
 
-.links:hover, .downloadStructure:hover {
+.links:hover, .return:hover, .downloadStructure:hover {
   box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
   background-color: rgba(72, 179, 212, 0.4);
   color: white;
@@ -464,6 +464,45 @@ h3 {
   font-size: 1rem;
 }
 
+select {
+  height: 35px;
+  position: absolute;
+  top: 30px;
+  right: 0;
+  z-index: 10;
+  margin: 10px;
+  border-radius: 3px;
+  background-color: #1565ab;
+  border-color: #1565ab;
+  color: white;
+  box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
+  padding: 5px;
+  cursor: pointer;
+  outline-color: #197acf;
+}
+
+select:hover {
+  box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+select:focus {
+  box-shadow: 0 0 3pt 2pt #1565ab;
+  box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
+}
+
+.return {
+  width: 75px;
+  height: 55px;
+  padding: 5px;
+  margin: 0;
+  position: absolute;
+  top: 30px;
+  left: 0;
+  z-index: 10;
+  text-transform: uppercase;
+  font-size: 1em;
+}
+
 .main {
   max-width: none;
   max-height: none;
@@ -595,6 +634,30 @@ hr {
 .exeptionLogo {
   bottom: -15px;
   left: 15px;
+}
+
+@media only screen and (max-width: 555px) {
+  .return {
+    text-align: left;
+    width: 50px;
+    height: 30px;
+  }
+  .return img {
+    width: 35px;
+    height: auto;
+  }
+  .return span {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 890px) {
+  select {
+    position: static;
+    border-color: #208cba;
+    background-color: #208cba;
+    outline-color: #29a5da;
+  }
 }
 
 @media only screen and (max-width: 520px) {
