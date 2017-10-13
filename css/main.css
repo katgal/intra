@@ -228,6 +228,60 @@ h1 {
   transform: rotate(-7deg);
 }
 
+.photo_wrapper {
+  width: auto;
+  height: auto;
+  position: relative;
+  transform: rotate(-2deg);
+}
+
+.photo_wrapper .hospital_photos {
+  border: 6px solid #c3eaf3;
+}
+
+.photo_wrapper .hospital_photos.large {
+  width: 235px;
+  height: 170px;
+  transform: rotate(10deg);
+}
+
+.photo_wrapper .hospital_photos.er_reg {
+  transform: rotate(7deg);
+}
+
+.photo_wrapper .pin {
+  position: absolute;
+  top: -20px;
+  left: 190px;
+  z-index: 10;
+}
+
+.photo_wrapper .pin.er {
+  top: -30px;
+  left: 90px;
+}
+
+.photo_wrapper .pin.er2 {
+  top: -30px;
+  left: 150px;
+}
+
+.main_wrapper {
+  width: auto;
+  height: auto;
+  position: relative;
+}
+
+.ambulance {
+  width: 115px;
+  height: auto;
+  position: absolute;
+  right: -30px;
+  top: -33px;
+  z-index: 10;
+  transform: rotate(46deg);
+}
+
 .pin.pin_1 {
   top: 5px;
   left: 5px;
@@ -310,7 +364,7 @@ body {
   .asideInfo,
   .box,
   .container {
-    width: 100%;
+    width: auto;
   }
   .linkIcon {
     font-size: 1em;
@@ -330,21 +384,9 @@ body {
   .container {
     width: 47%;
   }
-  .box {
-    width: 100%;
-  }
-}
-
-@media only screen and (min-width: 768px) and (max-width: 1024px) {
-  .box {
-    width: 90%;
-  }
 }
 
 @media only screen and (min-width: 1025px) and (max-width: 1280px) {
-  .box {
-    width: 90%;
-  }
   .aside {
     width: 95%;
   }

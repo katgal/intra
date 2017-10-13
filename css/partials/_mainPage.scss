@@ -96,7 +96,66 @@ h1 {
   }
 
 }
+// .hospital_photos{
+  // border: 4px solid $main-color;
+  // &:nth-child(2n+1){
+    // transform: rotate(2deg);
+  // }
+  // width: 250px;
+  // height:140px;
+// }
+.photo_wrapper{
+  width:auto;
+  height: auto;
+  position: relative;
+  // &:nth-child(odd){
+    // transform: rotate(2deg);
+  // }
+  // &:nth-child(1n+1){
+    transform: rotate(-2deg);
+  // }
+  .hospital_photos{
+    border: 6px solid $main-color;
+    &.large{
+      width:235px;
+      height:170px;
+      transform: rotate(10deg);
+    }
+    &.er_reg{
+      transform: rotate(7deg);
+    }
+  }
+  .pin{
+    position: absolute;
+    top: -20px;
+    left: 190px;
+    z-index:10;
+    &.er{
+      top: -30px;
+      left:90px;
+    }
+    &.er2{
+      top: -30px;
+      left:150px;
+    }
+  }
+}
+
 ///////////////
+.main_wrapper{
+  width: auto;
+  height: auto;
+  position: relative;
+}
+.ambulance{
+  width: 115px;
+    height: auto;
+    position: absolute;
+    right: -30px;
+    top: -33px;
+    z-index: 10;
+    transform: rotate(46deg);
+}
 .pin{
   // position: absolute;
   &.pin_1{
@@ -206,7 +265,8 @@ body{
   .asideInfo,
   .box,
   .container {
-    width: 100%;
+    // width: 100%;
+    width: auto;
   }
   .linkIcon{
     font-size: 1em;
@@ -234,17 +294,17 @@ body{
     width: 47%;
   }
   .box {
-    width: 100%;
+    // width: 100%;
   }
 }
 @media only screen and (min-width:768px) and (max-width:1024px) {
   .box {
-    width: 90%;
+    // width: 90%;
   }
 }
 @media only screen and (min-width:1025px) and (max-width:1280px) {
   .box{
-    width:90%;
+    // width:90%;
   }
   .aside {
     width: 95%;
