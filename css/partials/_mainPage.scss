@@ -262,6 +262,14 @@ body{
   body{
     height: 100%;
   }
+  .main_wrapper{
+    width: 95%;////
+    .ambulance{///
+      width:100px;/////
+      right: -10px;//
+      top: -35px;////
+    }
+  }
   .asideInfo,
   .box,
   .container {
@@ -289,10 +297,25 @@ body{
   //click permission agreement and flex is working fine
 }
 @media only screen and (min-width : 521px) and (max-width:767px) {
+  body{
+    height: 100%;
+  }
+  .main_wrapper{
+    width: 80%;////
+  }
   .asideInfo,
   .container {
-    width: 47%;
+    // width: 47%;
+    width: 100%;
   }
+  .asideInfo{
+    height:auto;
+  .aside{
+    margin: 0 auto;
+    &:nth-child(2){
+      margin-top: 20px;
+    }
+  }}
   .box {
     // width: 100%;
   }
