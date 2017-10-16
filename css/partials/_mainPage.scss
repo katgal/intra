@@ -84,36 +84,24 @@ h1 {
   // }
   a:nth-child(even){
     margin-top: 30px;
+    transform: rotate(1deg);
   }
   a:nth-child(odd){
     transform: rotate(-3deg);
-  }
-  a:nth-child(even){
-    transform: rotate(1deg);
   }
   a:nth-of-type(5n+3){
     transform: rotate(-7deg);
   }
 
 }
-// .hospital_photos{
-  // border: 4px solid $main-color;
-  // &:nth-child(2n+1){
-    // transform: rotate(2deg);
-  // }
-  // width: 250px;
-  // height:140px;
-// }
+
 .photo_wrapper{
   width:auto;
   height: auto;
   position: relative;
-  // &:nth-child(odd){
-    // transform: rotate(2deg);
-  // }
-  // &:nth-child(1n+1){
-    transform: rotate(-2deg);
-  // }
+  transform: rotate(-2deg);
+
+  //PINS ON PHOTOS
   .hospital_photos{
     border: 6px solid $main-color;
     &.large{
@@ -153,9 +141,10 @@ h1 {
     position: absolute;
     right: -30px;
     top: -33px;
-    z-index: 10;
+    z-index: 100;
     transform: rotate(46deg);
 }
+// FREE PINS
 .pin{
   // position: absolute;
   &.pin_1{
@@ -165,6 +154,60 @@ h1 {
   }
   &.pin_2{
     margin-top: 80px;
+  }
+}
+// MEMO//////////////////////////
+.note_wrapper{
+  width: auto;
+  height: auto;
+  position: relative;
+
+}
+.note{
+  width: 125px;
+  height:125px;
+  background-color: $minor8-color;
+  transform: rotate(-25deg);
+  box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
+  padding: 30px 5px 5px 5px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+
+  position: absolute;
+    z-index: 20;
+    top: 70px;
+    left: 95px;
+
+ //folded corner//////////
+
+ &::after{
+   content: "";
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+   border-left: 20px solid lighten($minor8-color, 5%);
+   position: absolute;
+   top: -8px;
+   left: 111px;
+  //  border-top-right-radius: 20px;
+   box-shadow: 0px 0px 6px 1px rgba($additional2-color, 0.3);
+ }
+
+  p:first-child{
+    width: 100%;
+    height:20px;
+    background-color: darken($minor8-color, 5%);
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  &.note_sticky_2{
+    top: 95px;
+    left: 8px;
+    transform:rotate(25deg);
+  }
+  &.left_shift{
+    left: 65px;
   }
 }
 //////////////////////
@@ -195,6 +238,8 @@ h1 {
     box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
     background-color: rgba($accent-color, 0.4);
     color: lighten($main-color, 30%);
+    z-index: 50;//////
+
   }
 }
 
@@ -266,8 +311,12 @@ body{
     width: 95%;////
     .ambulance{///
       width:100px;/////
-      right: -10px;//
-      top: -35px;////
+      // right: -10px;//
+      // top: -35px;////
+      right: -2px;//
+      top: -40px;////
+
+      transform: rotate(33deg);
     }
   }
   .asideInfo,
@@ -281,6 +330,12 @@ body{
   }
   .icons{
     padding:5px;
+  }
+  .note_sticky_1{//////////////////////////////////
+   left: 75px;////
+  }
+  .photo_wrapper .hospital_photos.large{
+    width: 225px;
   }
   .logo{
     bottom: -7%;
@@ -344,10 +399,10 @@ body{
   .box{
     width:40%;
   }
-  .pin_2{
-    position: absolute;
-    bottom: 30px;
-    right: 0px;
+  .pin_2{ //erase pin at bottom of the main container
+    // position: absolute;
+    // bottom: 30px;
+    // right: 0px;
   }
 }
 // @media only screen and (min-width:1600px){
