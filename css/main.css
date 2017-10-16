@@ -235,6 +235,7 @@ h1 {
 
 .photo_wrapper .hospital_photos {
   border: 6px solid #c3eaf3;
+  box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
 }
 
 .photo_wrapper .hospital_photos.large {
@@ -592,8 +593,8 @@ body {
 
 .note_phones {
   position: absolute;
-  left: -220px;
-  top: 225px;
+  left: -230px;
+  top: 230px;
 }
 
 @media only screen and (max-width: 450px) {
@@ -613,6 +614,12 @@ body {
   }
   .phoneLinks {
     margin: 0 0 20px;
+  }
+}
+
+@media only screen and (min-width: 624px) and (max-width: 794px) {
+  .phoneWrapper {
+    width: 90vw;
   }
 }
 

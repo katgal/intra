@@ -104,6 +104,8 @@ h1 {
   //PINS ON PHOTOS
   .hospital_photos{
     border: 6px solid $main-color;
+    box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
+    
     &.large{
       width:235px;
       height:170px;

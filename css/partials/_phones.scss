@@ -91,8 +91,8 @@
 
 .note_phones{/////////////
   position: absolute;
-  left: -220px;
-  top: 225px;
+  left: -230px;
+  top: 230px;
 }
 //*********************************************
 //************* media queries *****************
@@ -117,6 +117,11 @@
 
   .phoneLinks {
     margin: 0 0 20px;
+  }
+}
+@media only screen and (min-width:624px) and (max-width:794px){//////
+  .phoneWrapper {
+    width: 90vw;
   }
 }
 @media only screen and (min-width:624px) and (max-width:1280px) {
