@@ -59,6 +59,7 @@
   box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
   background-color: rgba(72, 179, 212, 0.4);
   color: white;
+  z-index: 50;
 }
 
 .logo {
@@ -583,6 +584,16 @@ body {
 .bottomInfo span,
 .topInfo span {
   font-weight: bold;
+}
+
+.note_location {
+  position: relative;
+}
+
+.note_phones {
+  position: absolute;
+  left: -220px;
+  top: 225px;
 }
 
 @media only screen and (max-width: 450px) {
