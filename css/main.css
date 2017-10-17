@@ -59,7 +59,7 @@
   box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
   background-color: rgba(72, 179, 212, 0.4);
   color: white;
-  z-index: 50;
+  z-index: 101;
 }
 
 .logo {
@@ -597,6 +597,38 @@ body {
   top: 230px;
 }
 
+.main_wrapper__phones {
+  position: absolute;
+  top: 0;
+  left: -25px;
+  transform: rotate(-12deg);
+  z-index: 100;
+}
+
+.main_wrapper__phones .pin.er {
+  top: -25px;
+  left: 30px;
+}
+
+.tilt {
+  transform: rotate(1deg);
+}
+
+.tilt2 {
+  transform: rotate(-3deg);
+}
+
+.tilt3 {
+  transform: rotate(1deg);
+}
+
+.pin.pin_1.main_wrapper__pin {
+  top: 195px;
+  left: 3px;
+  transform: rotate(30deg);
+  z-index: 100;
+}
+
 @media only screen and (max-width: 450px) {
   .innerPhones div:not(.arrows) {
     font-size: 0.9em;
@@ -615,11 +647,16 @@ body {
   .phoneLinks {
     margin: 0 0 20px;
   }
+  .phone_photo {
+    width: 160px;
+    height: auto;
+  }
 }
 
-@media only screen and (min-width: 624px) and (max-width: 794px) {
-  .phoneWrapper {
-    width: 90vw;
+@media only screen and (min-width: 623px) and (max-width: 794px) {
+  .note_phones {
+    left: -15px;
+    top: -50px;
   }
 }
 

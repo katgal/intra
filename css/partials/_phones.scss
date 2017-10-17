@@ -3,6 +3,7 @@
 
 .phoneWrapper {
   padding: 20px;
+  // @extend %tilt;
 }
 
 .phoneLinks {
@@ -94,6 +95,39 @@
   left: -230px;
   top: 230px;
 }
+
+//////////////PHOTO LEF CORNER
+
+.main_wrapper__phones{
+  position: absolute;
+  top: 0;
+  left: -25px;
+  transform: rotate(-12deg);
+  z-index: 100;
+  .pin.er{
+    top: -25px;
+    left: 30px;
+  }
+}
+
+.tilt{//PHONES used
+  transform: rotate(1deg);
+}
+.tilt2{/////used
+  transform: rotate(-3deg);
+}
+.tilt3{
+  transform: rotate(1deg);
+}
+.tilt4{
+  // transform: rotate();
+}
+.pin.pin_1.main_wrapper__pin{/////////////////////////PIN MAIN WRAPPER
+  top: 195px;
+  left: 3px;
+  transform: rotate(30deg);
+  z-index: 100;
+}
 //*********************************************
 //************* media queries *****************
 //*********************************************
@@ -118,12 +152,22 @@
   .phoneLinks {
     margin: 0 0 20px;
   }
-}
-@media only screen and (min-width:624px) and (max-width:794px){//////
-  .phoneWrapper {
-    width: 90vw;
+  ///PHOTO/////////////////////////////////
+  .phone_photo{
+    width:160px;
+    height: auto;
   }
 }
+/////////////
+@media only screen and (min-width: 623px) and (max-width: 794px) {
+  //  .phoneWrapper {
+    //  width: 90vw;bug bug bug
+  //  }
+  .note_phones{
+    left: -15px;
+    top: -50px;
+  }
+ }
 @media only screen and (min-width:624px) and (max-width:1280px) {
   .phoneLinks {
     width: 100%;

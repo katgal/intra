@@ -84,8 +84,20 @@ $minor8-color: rgb(245, 218, 113);
     box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
     background-color: rgba($accent-color, 0.4);
     color: lighten($main-color, 30%);
-    z-index: 50;//////
-    
+    z-index: 101;//////
+
+  }
+}
+%tilt{
+  a:nth-child(even){
+    margin-top: 30px;
+    transform: rotate(1deg);
+  }
+  a:nth-child(odd){
+    transform: rotate(-3deg);
+  }
+  a:nth-of-type(5n+3){
+    transform: rotate(-7deg);
   }
 }
 
