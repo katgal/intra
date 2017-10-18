@@ -26,7 +26,8 @@
 //*********************************************
 //******** ADMINISTRATIVE STRUCTURE ***********
 //*********************************************
-.administrationBox{
+
+.administrationBox {
   padding: 0 30px;
 }
 
@@ -65,10 +66,34 @@
   width: 85%;
   margin: 30px;
 }
+// photos and pins
+
+.main_wrapper__phones.admin_photo {
+  top: 110px;
+  left: -25px;
+  transform: rotate(7deg);
+
+  .pin.er.admin_pin {
+    top: -5px;
+    transform: rotate(35deg);
+  }
+}
+//additional pin
+
+.pin.pin_1.admin_pin2 {
+  top: 345px;
+  left: 5px;
+}
 //*********************************************
 //************* media queries *****************
 //*********************************************
 @media only screen and (max-width:545px) {
+  .content.administrationBox {
+    ////////
+    width: 85vw; //////
+    margin: 0 auto;///
+  }//////
+
   .structure {
     width: 100%;
     min-height: 110px;
@@ -79,12 +104,27 @@
     }
   }
 }
+////
+@media only screen and (min-width:521px) and (max-width:545px) {
+  .content.administrationBox {
+    width: 73vw;
+  }
+}
+//////
+//photo pediatrics (2 photo)
+@media only screen and (max-width: 623px) {
+  .phone_photo.pediatrics {
+    width: 115px; /////////
+  }
+}
 @media only screen and (min-width:546px) and (max-width:780px) {
-  .administrationBox {
-    width: 100vw;
+  .content.administrationBox {
+    // width: 100vw;
+    width: 75vw; ////////////////
 
     .structure {
-      width: 42%;
+      // width: 42%;
+      width: 49%; ///////////
       padding: 10px;
     }
   }

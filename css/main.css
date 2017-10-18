@@ -62,6 +62,14 @@
   z-index: 101;
 }
 
+.rotate {
+  transform: rotate(-85deg);
+}
+
+.rotate2 {
+  transform: rotate(33deg);
+}
+
 .logo {
   position: absolute;
   bottom: 15px;
@@ -404,7 +412,7 @@ h1 {
   box-shadow: 3px 5px 30px 3px rgba(0, 0, 0, 0.3);
   background-color: rgba(72, 179, 212, 0.4);
   color: white;
-  z-index: 50;
+  z-index: 101;
 }
 
 .aside {
@@ -689,7 +697,7 @@ body {
   }
 }
 
-@media only screen and (min-width: 623px) and (max-width: 794px) {
+@media only screen and (min-width: 624px) and (max-width: 794px) {
   .note_phones {
     left: -15px;
     top: -50px;
@@ -1006,7 +1014,27 @@ hr {
   margin: 30px;
 }
 
+.main_wrapper__phones.admin_photo {
+  top: 110px;
+  left: -25px;
+  transform: rotate(7deg);
+}
+
+.main_wrapper__phones.admin_photo .pin.er.admin_pin {
+  top: -5px;
+  transform: rotate(35deg);
+}
+
+.pin.pin_1.admin_pin2 {
+  top: 345px;
+  left: 5px;
+}
+
 @media only screen and (max-width: 545px) {
+  .content.administrationBox {
+    width: 85vw;
+    margin: 0 auto;
+  }
   .structure {
     width: 100%;
     min-height: 110px;
@@ -1017,12 +1045,24 @@ hr {
   }
 }
 
-@media only screen and (min-width: 546px) and (max-width: 780px) {
-  .administrationBox {
-    width: 100vw;
+@media only screen and (min-width: 521px) and (max-width: 545px) {
+  .content.administrationBox {
+    width: 73vw;
   }
-  .administrationBox .structure {
-    width: 42%;
+}
+
+@media only screen and (max-width: 623px) {
+  .phone_photo.pediatrics {
+    width: 115px;
+  }
+}
+
+@media only screen and (min-width: 546px) and (max-width: 780px) {
+  .content.administrationBox {
+    width: 75vw;
+  }
+  .content.administrationBox .structure {
+    width: 49%;
     padding: 10px;
   }
 }
