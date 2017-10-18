@@ -5,23 +5,41 @@
 
 .content {
   @extend %mainContainer;
-  position: relative;/////////////
+  position: relative; /////////////
 }
 
 .links {
   @extend %links;
+  width: auto; //change
+}
+
+//photo subPages 1
+.photo_subPages1 {
+  margin-left: 30%;
+}
+
+.photo_subPages2 {
+  margin-right: 30%;
+  transform: rotate(-18deg);
 }
 
 //*********************************************
 //************* media queries *****************
 //*********************************************
 @media only screen and (max-width:520px) {
-
-  .content {
-    width: 100vw;
+  .content.subPagesContent {
+    // width: 100vw;
+    width: 88vw; ////
 
     .links {
       width: 100%;
+    }
+
+    .photo_subPages1,
+    .photo_subPages2 {
+      ////
+      margin-left: -27px; //
+      margin-right: 0; ////
     }
   }
 }

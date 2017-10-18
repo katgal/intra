@@ -164,7 +164,8 @@ h1 {
 
     &.large{
       width:235px;
-      height:170px;
+      // height:170px;
+      height: auto;
       transform: rotate(10deg);
     }
     &.er_reg{

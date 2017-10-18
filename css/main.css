@@ -284,7 +284,7 @@ h1 {
 
 .photo_wrapper .hospital_photos.large {
   width: 235px;
-  height: 170px;
+  height: auto;
   transform: rotate(10deg);
 }
 
@@ -540,12 +540,30 @@ body {
   position: relative;
 }
 
+.links {
+  width: auto;
+}
+
+.photo_subPages1 {
+  margin-left: 30%;
+}
+
+.photo_subPages2 {
+  margin-right: 30%;
+  transform: rotate(-18deg);
+}
+
 @media only screen and (max-width: 520px) {
-  .content {
-    width: 100vw;
+  .content.subPagesContent {
+    width: 88vw;
   }
-  .content .links {
+  .content.subPagesContent .links {
     width: 100%;
+  }
+  .content.subPagesContent .photo_subPages1,
+  .content.subPagesContent .photo_subPages2 {
+    margin-left: -27px;
+    margin-right: 0;
   }
 }
 
