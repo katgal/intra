@@ -1,5 +1,7 @@
 $(document).ready(function() {
 
+  console.log("Czy Ty też słyszysz głosy?");
+
   function accordion() {
     var accordion = $(".accordionWrapper").find(".accordion");
     var panel = $(".accordionWrapper").find(".panel");

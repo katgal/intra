@@ -88,6 +88,7 @@ $minor8-color: rgb(245, 218, 113);
 
   }
 }
+//not used
 %tilt{
   a:nth-child(even){
     margin-top: 30px;
@@ -100,7 +101,36 @@ $minor8-color: rgb(245, 218, 113);
     transform: rotate(-7deg);
   }
 }
-///////////////
+/////////used
+%lightTilt{
+  a:nth-child(even){
+    margin-top: 30px;
+    transform: rotate(1deg);
+  }
+  a:nth-child(odd){
+    transform: rotate(-1deg);
+  }
+  a:nth-of-type(5n+3){
+    transform: rotate(-2deg);
+  }
+}
+
+%tiltDivs{//used in admin
+  /*
+  div:nth-child(even):not(.note_wrapper){
+    margin-top: 30px;
+    transform: rotate(1deg);
+  }
+  div:nth-child(odd):not(.note_wrapper){
+    transform: rotate(-1deg);
+  }
+  div:nth-of-type(5n+3):not(.note_wrapper){
+    transform: rotate(-2deg);
+  }
+  */
+}
+
+///////////////used
 .rotate{
   transform: rotate(-85deg)
 }

@@ -7,6 +7,12 @@
   @extend %mainContainer;
   position: relative; /////////////
 }
+//empty scrollbar is showing from time to time (bug?)
+//in main container so I added overflow to avoid this
+.subPagesContent{
+  overflow-x: hidden;
+  @extend %lightTilt;////
+}
 
 .links {
   @extend %links;
@@ -24,6 +30,7 @@
 }
 
 .note.note_subPages{
+  // &._subPages - not work...
   top: 175px;
   left: -40px;
 }
