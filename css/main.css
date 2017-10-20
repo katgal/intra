@@ -575,7 +575,28 @@ body {
   left: -40px;
 }
 
+.note.note_subPages.nfz {
+  left: -115px;
+}
+
+.note.note_subPages.bhp {
+  top: 210px;
+  left: -15px;
+}
+
+.ambulance.right_corner {
+  top: -35px;
+  right: -30px;
+  transform: rotate(0deg);
+}
+
 @media only screen and (max-width: 520px) {
+  .ambulance.right_corner {
+    top: -15px;
+    right: -20px;
+    width: 75px;
+    height: auto;
+  }
   .content.subPagesContent {
     width: 88vw;
   }

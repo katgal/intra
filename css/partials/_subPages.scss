@@ -33,12 +33,32 @@
   // &._subPages - not work...
   top: 175px;
   left: -40px;
+  &.nfz{//subPage3
+    left:-115px;///
+  }
+  &.bhp{///subPage4
+    top:210px;
+    left: -15px;
+  }
+}
+.ambulance.right_corner{//subPage4
+  top: -35px;
+  right:-30px;
+  transform: rotate(0deg);
 }
 
 //*********************************************
 //************* media queries *****************
 //*********************************************
 @media only screen and (max-width:520px) {
+
+  .ambulance.right_corner{//subPage4
+    top:-15px;
+    right: -20px;
+    width: 75px;
+    height: auto;
+  }
+
   .content.subPagesContent {
     // width: 100vw;
     width: 88vw; ////
