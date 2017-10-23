@@ -1,5 +1,5 @@
 
-//made by katgal, september 2017
+//made by katgal, september/october 2017
 
 .phoneWrapper {
   padding: 20px;
@@ -19,7 +19,7 @@
   }
 
   &:hover {
-    .withBorder {
+    p:nth-child(2) {
       border: 2px dashed darken($minor1-color, 10%);
     }
   }

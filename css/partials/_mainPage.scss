@@ -1,5 +1,5 @@
 
-//made by katgal, september 2017
+//made by katgal, september/october 2017
 
 * {
   box-sizing: border-box;
@@ -274,6 +274,44 @@ h1 {
   }
   &.left_shift{
     left: 65px;
+  }
+}
+
+//note 2///////////////////////
+.note2{
+  width: 125px;
+  height:125px;
+  background-color: $minor8-color;
+  transform: rotate(-25deg);
+  box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
+  padding: 30px 5px 5px 5px;
+  border-top-right-radius: 25px;
+  overflow: hidden;
+
+  position: absolute;
+    z-index: 20;
+
+ //folded corner//////////
+
+ &::after{
+   content: "";
+   width: 0;
+   height: 0;
+   border-top: 20px solid transparent;
+   border-left: 20px solid lighten($minor8-color, 5%);
+   position: absolute;
+   top: -8px;
+   left: 111px;
+   box-shadow: 0px 0px 6px 1px rgba($additional2-color, 0.3);
+ }
+
+  p:first-child{
+    width: 100%;
+    height:20px;
+    background-color: darken($minor8-color, 5%);
+    position: absolute;
+    top: 0;
+    right: 0;
   }
 }
 //////////////////////
