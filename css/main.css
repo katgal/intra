@@ -455,17 +455,18 @@ h1 {
   background-color: rgba(255, 255, 255, 0.6);
 }
 
-body {
-  scrollbar-base-color: white;
-  scrollbar-face-color: white;
-  scrollbar-highlight-color: white;
-  scrollbar-shadow-color: white;
-  scrollbar-track-color: #48b3d4;
-  scrollbar-3dlight-color: white;
-  scrollbar-darkshadow-color: white;
-  scrollbar-arrow-color: white;
+/*
+body{
+  scrollbar-base-color: $additional-color;
+  scrollbar-face-color: $additional-color;
+  scrollbar-highlight-color:$additional-color;
+  scrollbar-shadow-color: $additional-color;
+  // scrollbar-track-color:  rgb(72,179, 212);
+  scrollbar-3dlight-color:  $additional-color;
+  scrollbar-darkshadow-color: $additional-color;
+  scrollbar-arrow-color:  $additional-color;
 }
-
+*/
 @media only screen and (max-width: 520px) {
   body {
     height: 100%;
@@ -626,6 +627,10 @@ body {
   border: 2px dashed rgba(27, 121, 182, 0.8);
   border-radius: 5px;
   padding: 5px;
+}
+
+.phoneLinks:hover .withBorder {
+  border: 2px dashed #145b8a;
 }
 
 .linkHeader {
@@ -896,7 +901,6 @@ hr {
 }
 
 .panel table:hover {
-  background-color: rgba(72, 179, 212, 0.4);
   color: white;
 }
 

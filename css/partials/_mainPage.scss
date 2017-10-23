@@ -349,16 +349,19 @@ h1 {
 }
 
 //internet explorer
+//if gradient - turned styled scrollbar off
+/*
 body{
   scrollbar-base-color: $additional-color;
   scrollbar-face-color: $additional-color;
   scrollbar-highlight-color:$additional-color;
   scrollbar-shadow-color: $additional-color;
-  scrollbar-track-color:  rgb(72,179, 212);
+  // scrollbar-track-color:  rgb(72,179, 212);
   scrollbar-3dlight-color:  $additional-color;
   scrollbar-darkshadow-color: $additional-color;
   scrollbar-arrow-color:  $additional-color;
 }
+*/
 
 //*********************************************
 //************* media queries *****************

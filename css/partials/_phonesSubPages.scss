@@ -132,7 +132,7 @@ hr {
     // so I switched it in _reset to separate
     // or I just can turn border-collapse off, it will work also properly
     &:hover {
-      background-color: rgba($accent-color, 0.4);
+      // background-color: rgba($accent-color, 0.4); if gradient turn off hover backlight
       color: lighten($main-color, 30%); //ISO tables
       //for ISO tables
       a {
