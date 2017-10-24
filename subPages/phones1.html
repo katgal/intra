@@ -15,14 +15,147 @@
   <h1 class="exeptionHeader">Szpital przy ul. Armii Krajowej 7</h1>
   <h3 class="exeptionH3">Jeżeli jakiś numer telefonu jest nieaktualny, proszę to zgłosić pod numerem 843</h3>
 
+  <!-- search engine -->
+  <select onchange="location = this.value" id="test">
+      <option value="" disabled selected hidden>
+        Wybierz Oddział
+      </option>
+      <option value="#wybrane_numery">
+        Wybrane Numery Szpitala
+      </option>
+      <option disabled>──────────</option>
+      <option value="#organizacyjno_prawny">
+        Dział Organizacyjno-Prawny i Kadr
+      </option>
+      <option value="#ksiegowosc">
+        Dział Księgowości
+      </option>
+      <option value="#administracja">
+        Administracja Szpitala
+      </option>
+      <option value="#rum">
+        Rejestr Usług Medycznych
+      </option>
+      <option disabled>──────────</option>
+      <option value="#ginekologiczno_polozniczy">
+        Oddział Ginekologiczno-Położniczy
+      </option>
+      <option value="#neonatologia">
+        Neonatologia
+      </option>
+      <option value="#chirurgia">
+        Chirurgia
+      </option>
+      <option value="#urologia">
+        Urologia
+      </option>
+      <option value="#ortopedia">
+        Ortopedia
+      </option>
+      <option value="#neurochirurgia">
+        Neurochirurgia
+      </option>
+      <option value="#nefrologia">
+        Nefrologia i Choroby Wewnętrzne
+      </option>
+      <option value="#diabetologia">
+        Diabetologia i Choroby Wewnętrzne
+      </option>
+      <option value="#rehabilitacja">
+        Rehabilitacja
+      </option>
+      <option value="#okulistyka">
+        Okulistyka
+      </option>
+      <option value="#otolaryngologia">
+        Otolaryngologia
+      </option>
+      <option value="#choroby_wew">
+        Choroby Wewnętrzne
+      </option>
+      <option value="#kardiologia">
+        Kardiologia
+      </option>
+      <option value="#neurologia">
+        Neurologia
+      </option>
+      <option value="#pediatria">
+        Pediatria
+      </option>
+      <option value="#sor">
+        Szpitalny Oddział Ratunkowy
+      </option>
+      <option value="#anestezjologia">
+        Oddział Anestezjologii i Intensywnej Terapii
+      </option>
+      <option value="#chirurgia_ortopedyczna">
+        Oddział Chirurgii Urazowo-Ortopedycznej
+      </option>
+      <option value="#blok_operacyjny">
+        Blok Operacyjny
+      </option>
+      <option value="#zaklad_rehabilitacji">
+        Zakład Rehabilitacji
+      </option>
+      <option value="#diagnostyka_kardiologiczna">
+        Pracownie Diagnostyki Kardiologicznej
+      </option>
+      <option value="#diagnostyka_endoskopowa">
+        Pracownie Diagnostyki Endoskopowej
+      </option>
+      <option value="#patomorfologia">
+        Zakład Patomorfologii
+      </option>
+      <option value="#apteka">
+        Apteka
+      </option>
+      <option value="#sterylizatornia">
+        Centralna Sterylizatornia
+      </option>
+      <option value="#diagnostyka_obrazowa">
+        Zakład Diagnostyki Obrazowej
+      </option>
+      <option value="#laboratorium">
+        Laboratorium
+      </option>
+      <option disabled>──────────</option>
+      <option value="#specjalistyczne">
+        Przychodnie Specjalistyczne
+      </option>
+      <option value="#rodzinna">
+        Poradnia Medycyny Rodzinnej
+      </option>
+      <option value="#stomatologiczna">
+        Przychodnia Stomatologiczna
+      </option>
+      <option disabled>──────────</option>
+      <option value="#admin_gosp">
+        Dział Administracyjno-Gospodarczy
+      </option>
+      <option value="#techniczny">
+        Dział Techniczno-Eksploatacyjny
+      </option>
+      <option value="#zywienia">
+        Dział Żywienia
+      </option>
+      <option disabled>──────────</option>
+      <option value="#pozostale">
+        Pozostałe
+      </option>
+    </select>
 
   <!-- reeturn to phone list -->
-  <a href="../SubPages/phones.html" class="return">
+  <a href="../index.html" class="return">
      <img class="download" src="../icons/left-arrow.png" width="50px" height="25px" alt="" title="wróć do spisu telefonów">
      <span>wróć</span>
   </a>
+
+  <section class="main_wrapper">
+  <!-- img AMBULANCE -->
+  <img src="../icons/ambulance/air.png" class="ambulance" alt="" title="ambulans" />
+
   <!-- main content -->
-  <main class="content main">
+  <main class="content main subPagesContent">
 
     <!--*******************************-->
     <!-- GENERAL NUMBERS -->
@@ -35,7 +168,7 @@
 
     <!-- direct phone numbers -->
     <div class="accordionWrapper">
-      <div class="links accordion">Wybrane Numery Szpitala</div>
+      <div class="links accordion" id="wybrane_numery">Wybrane Numery Szpitala</div>
       <div class="panel">
         <table>
           <tbody>
@@ -90,7 +223,7 @@
     <hr />
     <!-- law and organization -->
     <div class="accordionWrapper">
-      <div class="links accordion">Dział Organizacyjno - Prawny i Kadr</div>
+      <div class="links accordion" id="organizacyjno_prawny">Dział Organizacyjno - Prawny i Kadr</div>
       <div class="panel">
         <table>
           <tbody>
@@ -157,7 +290,7 @@
 
     <!-- accountants -->
     <div class="accordionWrapper">
-      <div class="links accordion">Dział Księgowości</div>
+      <div class="links accordion" id="ksiegowosc">Dział Księgowości</div>
       <div class="panel">
         <table>
           <tbody>
@@ -239,7 +372,7 @@
     </div>
     <!-- administration -->
     <div class="accordionWrapper">
-      <div class="links accordion">Administracja Szpitala</div>
+      <div class="links accordion" id="administracja">Administracja Szpitala</div>
       <div class="panel">
         <table>
           <tbody>
@@ -313,7 +446,7 @@
     </div>
     <!-- registration of med services -->
     <div class="accordionWrapper">
-      <div class="links accordion">Rejestr Usług Medycznych</div>
+      <div class="links accordion" id="rum">Rejestr Usług Medycznych</div>
       <div class="panel">
         <table>
           <tbody>
@@ -362,7 +495,7 @@
     <hr />
 
     <div class="accordionWrapper">
-      <div class="links accordion">Ginekologiczno - Położniczy</div>
+      <div class="links accordion" id="ginekologiczno_polozniczy">Ginekologiczno - Położniczy</div>
       <div class="panel">
         <table>
           <tbody>
@@ -539,7 +672,7 @@
     </div>
     <!-- neonatology -->
     <div class="accordionWrapper">
-      <div class="links accordion">Neonatologia</div>
+      <div class="links accordion" id="neonatologia">Neonatologia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -605,7 +738,7 @@
     </div>
     <!-- surgery -->
     <div class="accordionWrapper">
-      <div class="links accordion">Chirurgia</div>
+      <div class="links accordion" id="chirurgia">Chirurgia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -679,7 +812,7 @@
     </div>
     <!-- urology -->
     <div class="accordionWrapper">
-      <div class="links accordion">Urologia</div>
+      <div class="links accordion" id="urologia">Urologia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -753,7 +886,7 @@
     </div>
     <!-- orthopedics -->
     <div class="accordionWrapper">
-      <div class="links accordion">Ortopedia</div>
+      <div class="links accordion" id="ortopedia">Ortopedia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -819,7 +952,7 @@
     </div>
     <!-- neurosurgery -->
     <div class="accordionWrapper">
-      <div class="links accordion">Neurochirurgia</div>
+      <div class="links accordion" id="neurochirurgia">Neurochirurgia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -869,7 +1002,7 @@
     </div>
     <!-- nefrology and internal diseases -->
     <div class="accordionWrapper">
-      <div class="links accordion">Nefrologia i Choroby Wewnętrzne</div>
+      <div class="links accordion" id="nefrologia">Nefrologia i Choroby Wewnętrzne</div>
       <div class="panel">
         <table>
           <tbody>
@@ -927,7 +1060,7 @@
     </div>
     <!-- diabetology and internal diseases-->
     <div class="accordionWrapper">
-      <div class="links accordion">Diabetologia i Choroby Wewnętrzne</div>
+      <div class="links accordion" id="diabetologia">Diabetologia i Choroby Wewnętrzne</div>
       <div class="panel">
         <table>
           <tbody>
@@ -985,7 +1118,7 @@
     </div>
     <!-- rehabilitation -->
     <div class="accordionWrapper">
-      <div class="links accordion">Rehabilitacja</div>
+      <div class="links accordion" id="rehabilitacja">Rehabilitacja</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1051,7 +1184,7 @@
     </div>
     <!-- ophthalmology -->
     <div class="accordionWrapper">
-      <div class="links accordion">Okulistyka</div>
+      <div class="links accordion" id="okulistyka">Okulistyka</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1125,7 +1258,7 @@
     </div>
     <!-- otolaryngology -->
     <div class="accordionWrapper">
-      <div class="links accordion">Otolaryngologia</div>
+      <div class="links accordion" id="otolaryngologia">Otolaryngologia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1191,7 +1324,7 @@
     </div>
     <!-- internal diseases -->
     <div class="accordionWrapper">
-      <div class="links accordion">Choroby Wewnętrzne</div>
+      <div class="links accordion" id="choroby_wew">Choroby Wewnętrzne</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1249,7 +1382,7 @@
     </div>
     <!-- cardiology -->
     <div class="accordionWrapper">
-      <div class="links accordion">Kardiologia</div>
+      <div class="links accordion" id="kardiologia">Kardiologia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1315,7 +1448,7 @@
     </div>
     <!-- neurology -->
     <div class="accordionWrapper">
-      <div class="links accordion">Neurologia</div>
+      <div class="links accordion" id="neurologia">Neurologia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1365,7 +1498,7 @@
     </div>
     <!-- pediatrics -->
     <div class="accordionWrapper">
-      <div class="links accordion">Pediatria</div>
+      <div class="links accordion" id="pediatria">Pediatria</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1439,7 +1572,7 @@
     </div>
     <!-- SOR -->
     <div class="accordionWrapper">
-      <div class="links accordion">Szpitalny Oddział Ratunkowy</div>
+      <div class="links accordion" id="sor">Szpitalny Oddział Ratunkowy</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1569,7 +1702,7 @@
     </div>
     <!-- Department of Anesthesiology and Intensive Care -->
     <div class="accordionWrapper">
-      <div class="links accordion">Oddział Anestezjologii i Intensywnej Terapii</div>
+      <div class="links accordion" id="anestezjologia">Oddział Anestezjologii i Intensywnej Terapii</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1627,7 +1760,7 @@
     </div>
     <!-- Orthopaedic and Trauma Surgery  -->
     <div class="accordionWrapper">
-      <div class="links accordion">Oddział Chirurgii Urazowo - Ortopedycznej</div>
+      <div class="links accordion" id="chirurgia_ortopedyczna">Oddział Chirurgii Urazowo - Ortopedycznej</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1669,7 +1802,7 @@
     </div>
     <!-- O.R. -->
     <div class="accordionWrapper">
-      <div class="links accordion">Blok Operacyjny</div>
+      <div class="links accordion" id="blok_operacyjny">Blok Operacyjny</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1767,7 +1900,7 @@
     </div>
     <!-- rehabilitation center -->
     <div class="accordionWrapper">
-      <div class="links accordion">Zakład Rehabilitacji</div>
+      <div class="links accordion" id="zaklad_rehabilitacji">Zakład Rehabilitacji</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1825,7 +1958,7 @@
     </div>
     <!-- cardilogy diagnostic labaratpry -->
     <div class="accordionWrapper">
-      <div class="links accordion">Pracownie Diagnostyki Kardiologicznej</div>
+      <div class="links accordion" id="diagnostyka_kardiologiczna">Pracownie Diagnostyki Kardiologicznej</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1867,7 +2000,7 @@
     </div>
     <!-- laboratory of endoscopic laboratory-->
     <div class="accordionWrapper">
-      <div class="links accordion">Pracownie Diagnostyki Endoskopowej</div>
+      <div class="links accordion" id="diagnostyka_endoskopowa">Pracownie Diagnostyki Endoskopowej</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1893,7 +2026,7 @@
     </div>
     <!-- pathomorphology unit -->
     <div class="accordionWrapper">
-      <div class="links accordion">Zakład Patomorfologii</div>
+      <div class="links accordion" id="patomorfologia">Zakład Patomorfologii</div>
       <div class="panel">
         <table>
           <tbody>
@@ -1951,7 +2084,7 @@
     </div>
     <!-- pharmacy -->
     <div class="accordionWrapper">
-      <div class="links accordion">Apeka</div>
+      <div class="links accordion" id="apteka">Apteka</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2009,7 +2142,7 @@
     </div>
     <!-- Central Sterile Supply Department -->
     <div class="accordionWrapper">
-      <div class="links accordion">Centralna Sterylizatornia</div>
+      <div class="links accordion" id="sterylizatornia">Centralna Sterylizatornia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2059,7 +2192,7 @@
     </div>
     <!-- diagnostic laboratory -->
     <div class="accordionWrapper">
-      <div class="links accordion">Zakład Diagnostyki Obrazowej</div>
+      <div class="links accordion" id="diagnostyka_obrazowa">Zakład Diagnostyki Obrazowej</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2149,7 +2282,7 @@
     </div>
     <!-- laboratory -->
     <div class="accordionWrapper">
-      <div class="links accordion">Laboratorium</div>
+      <div class="links accordion" id="laboratorium">Laboratorium</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2261,7 +2394,7 @@
     <hr />
     <!-- general numbers -->
     <div class="accordionWrapper">
-      <div class="links accordion">Przychodnie Specjalistyczne</div>
+      <div class="links accordion" id="specjalistyczne">Przychodnie Specjalistyczne</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2479,7 +2612,7 @@
     </div>
     <!-- family medicine clinic -->
     <div class="accordionWrapper">
-      <div class="links accordion">Poradnia Medycyny Rodzinnej</div>
+      <div class="links accordion" id="rodzinna">Poradnia Medycyny Rodzinnej</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2553,7 +2686,7 @@
     </div>
     <!-- dental clinic -->
     <div class="accordionWrapper">
-      <div class="links accordion">Przychodnia Stomatologiczna</div>
+      <div class="links accordion" id="stomatologiczna">Przychodnia Stomatologiczna</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2625,7 +2758,7 @@
     <hr />
     <!-- administrative department -->
     <div class="accordionWrapper">
-      <div class="links accordion">Dział Administracyjno - Gospodarczy</div>
+      <div class="links accordion" id="admin_gosp">Dział Administracyjno - Gospodarczy</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2739,7 +2872,7 @@
     </div>
     <!-- technical service department -->
     <div class="accordionWrapper">
-      <div class="links accordion">Dział Techniczno - Eksploatacyjny</div>
+      <div class="links accordion" id="techniczny">Dział Techniczno - Eksploatacyjny</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2877,7 +3010,7 @@
     </div>
     <!-- nutrition -->
     <div class="accordionWrapper">
-      <div class="links accordion">Dział Żywienia</div>
+      <div class="links accordion" id="zywienia">Dział Żywienia</div>
       <div class="panel">
         <table>
           <tbody>
@@ -2950,7 +3083,7 @@
     <hr />
     <!-- general -->
     <div class="accordionWrapper">
-      <div class="links accordion">Pozostałe Numery</div>
+      <div class="links accordion" id="pozostale">Pozostałe Numery</div>
       <div class="panel">
         <table>
           <tbody>
@@ -3113,7 +3246,7 @@
 
 
   </main>
-
+</section>
   <img src="../images/logomin.png" class="logo exeptionLogo" alt="" title="logo Szpitala Wojewódzkiego w Sieradzu" />
 
   <script src="../js/jquery-3.2.1.min.js"></script>

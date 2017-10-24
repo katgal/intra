@@ -24,8 +24,10 @@ select {
   z-index: 10;
   margin: 10px;
   border-radius: 3px;
-  background-color: $minor6-color;
-  border-color: $minor6-color;
+  background-color: darken($minor6-color,8%);
+  border-color: darken($minor6-color, 8%);
+  // background-color: $minor6-color; for cloud theme
+  // border-color: $minor6-color;//for cloud theme
   color: $additional-color;
   box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
   padding: 5px;
@@ -207,7 +209,6 @@ hr {
 //*********************************************
 //************* media queries *****************
 //*********************************************
-
 //*********************************************
 //******* return icon and select **************
 @media only screen and (max-width:555px) {
@@ -229,13 +230,23 @@ hr {
 @media only screen and (max-width: 890px) {
   select {
     position: static;
-    border-color: $minor7-color;
-    background-color: $minor7-color;
-    outline-color: lighten($minor7-color,8%);
+    //if gradient - no need for these colors
+    // border-color: $minor7-color;
+    // background-color: $minor7-color;
+    // outline-color: lighten($minor7-color,8%);
   }
 }
 //*********************************************
 //****** general media query ******************
+@media only screen and (max-width:490px) {
+  .main {
+    width: 85vw;
+
+    .accordion {
+      font-size: 1em;
+    }
+  }
+}
 @media only screen and (max-width:520px) {
   .exeptionH3 {
     width: 100vw;

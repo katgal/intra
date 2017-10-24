@@ -840,8 +840,8 @@ select {
   z-index: 10;
   margin: 10px;
   border-radius: 3px;
-  background-color: #1565ab;
-  border-color: #1565ab;
+  background-color: #115087;
+  border-color: #115087;
   color: white;
   box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
   padding: 5px;
@@ -1021,9 +1021,15 @@ hr {
 @media only screen and (max-width: 890px) {
   select {
     position: static;
-    border-color: #208cba;
-    background-color: #208cba;
-    outline-color: #29a5da;
+  }
+}
+
+@media only screen and (max-width: 490px) {
+  .main {
+    width: 85vw;
+  }
+  .main .accordion {
+    font-size: 1em;
   }
 }
 
