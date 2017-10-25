@@ -29,7 +29,6 @@
 
 .administrationBox {
   padding: 0 30px;
-  // @extend %tiltDivs;//added
 }
 
 .structure {
@@ -112,9 +111,9 @@
   }
 }
 //////
-//photo pediatrics (2 photo)
+//vertical photo (2 photo)
 @media only screen and (max-width: 623px) {
-  .phone_photo.pediatrics {
+  .phone_photo.vertical {
     width: 115px; /////////
   }
 }

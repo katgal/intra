@@ -1160,7 +1160,7 @@ hr {
 }
 
 @media only screen and (max-width: 623px) {
-  .phone_photo.pediatrics {
+  .phone_photo.vertical {
     width: 115px;
   }
 }
