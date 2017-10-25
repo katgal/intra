@@ -1024,15 +1024,16 @@ hr {
   }
 }
 
-@media only screen and (max-width: 490px) {
+/*@media only screen and (max-width:490px) {
   .main {
     width: 85vw;
-  }
-  .main .accordion {
-    font-size: 1em;
+
+    .accordion {
+      font-size: 1em;
+    }
   }
 }
-
+*/
 @media only screen and (max-width: 520px) {
   .exeptionH3 {
     width: 100vw;

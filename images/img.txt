@@ -1,0 +1,29 @@
+USED PICTURES:
+
+1. h_angle2
+2. h_out2
+3. h_out3
+4. patron_inside
+5. sor3
+6. surgery2
+7. surgery4
+8. sor_intense
+9. patron_flowers
+10. h_autumn
+11. pediatrics
+12. komor
+13. h_out
+14. surgery6
+15. sor2
+16. h_out4
+17. h_out_flowers
+
+FOR USE:
+
+1. sor
+2. sor_box
+3. sor_staff
+4. surgery
+5. surgery3
+6. surgery5
+7. sor4

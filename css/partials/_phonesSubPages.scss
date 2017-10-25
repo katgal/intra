@@ -238,7 +238,8 @@ hr {
 }
 //*********************************************
 //****** general media query ******************
-@media only screen and (max-width:490px) {
+//.subPagesContent added to phones1,2 did the work
+/*@media only screen and (max-width:490px) {
   .main {
     width: 85vw;
 
@@ -247,6 +248,7 @@ hr {
     }
   }
 }
+*/
 @media only screen and (max-width:520px) {
   .exeptionH3 {
     width: 100vw;
