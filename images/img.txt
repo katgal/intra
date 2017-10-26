@@ -17,11 +17,11 @@ USED PICTURES:
 15. sor2
 16. h_out4
 17. h_out_flowers
+18. sor_box
 
 FOR USE:
 
 1. sor
-2. sor_box
 3. sor_staff
 4. surgery
 5. surgery3

@@ -22,6 +22,9 @@
 //photo subPages 1
 .photo_subPages1 {
   margin-left: 30%;
+  &.photo_diffrent_margin{//subPage2 photo
+    margin-left: 5%;
+  }
 }
 
 .photo_subPages2 {
