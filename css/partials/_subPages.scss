@@ -52,6 +52,13 @@
 //*********************************************
 //************* media queries *****************
 //*********************************************
+@media only screen and (max-width:390px){
+  .panel{
+    .subPage8_table{
+      font-size: 0.76em;
+    }
+  }
+}
 @media only screen and (max-width:520px) {
 
   .ambulance.right_corner{//subPage4
