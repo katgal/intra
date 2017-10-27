@@ -83,6 +83,18 @@
   transform: rotate(33deg);
 }
 
+.tilt {
+  transform: rotate(1deg);
+}
+
+.tilt2 {
+  transform: rotate(-3deg);
+}
+
+.tilt3 {
+  transform: rotate(7deg);
+}
+
 .logo {
   position: absolute;
   bottom: 15px;
@@ -301,10 +313,6 @@ h1 {
   transform: rotate(10deg);
 }
 
-.photo_wrapper .hospital_photos.er_reg {
-  transform: rotate(7deg);
-}
-
 .photo_wrapper .pin {
   position: absolute;
   top: -20px;
@@ -312,12 +320,12 @@ h1 {
   z-index: 10;
 }
 
-.photo_wrapper .pin.er {
+.photo_wrapper .pin.position1 {
   top: -30px;
   left: 90px;
 }
 
-.photo_wrapper .pin.er2 {
+.photo_wrapper .pin.position2 {
   top: -30px;
   left: 150px;
 }
@@ -761,11 +769,13 @@ body{
   z-index: 100;
 }
 
-.main_wrapper__phones .pin.er {
+.main_wrapper__phones .pin.position1 {
   top: -25px;
   left: 30px;
 }
 
+/*
+//for PHONES links rotation
 .tilt {
   transform: rotate(1deg);
 }
@@ -773,11 +783,11 @@ body{
 .tilt2 {
   transform: rotate(-3deg);
 }
-
+//photo rotation
 .tilt3 {
-  transform: rotate(1deg);
+  transform: rotate(7deg);
 }
-
+*/
 .pin.pin_1.main_wrapper__pin {
   top: 195px;
   left: 3px;
@@ -1138,14 +1148,27 @@ hr {
   transform: rotate(7deg);
 }
 
-.main_wrapper__phones.admin_photo .pin.er.admin_pin {
+.main_wrapper__phones.admin_photo .pin.position1.admin_pin {
   top: -5px;
   transform: rotate(35deg);
 }
 
-.pin.pin_1.admin_pin2 {
+.pin.pin_1.pin_low {
   top: 345px;
   left: 5px;
+}
+
+@media only screen and (max-width: 480px) {
+  .main_wrapper__phones .phone_photo {
+    width: 130px;
+    height: auto;
+  }
+  .main_wrapper__phones .phone_photo.vertical {
+    width: 100px;
+  }
+  .main_wrapper__phones.admin_photo {
+    top: 60px;
+  }
 }
 
 @media only screen and (max-width: 545px) {

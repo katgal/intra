@@ -168,20 +168,23 @@ h1 {
       height: auto;
       transform: rotate(10deg);
     }
-    &.er_reg{
-      transform: rotate(7deg);
-    }
+    // &.er_reg{
+      // transform: rotate(7deg);
+    // }
   }
+  //pins on photos
   .pin{
     position: absolute;
     top: -20px;
     left: 190px;
     z-index:10;
-    &.er{
+    //middle
+    &.position1{
       top: -30px;
       left:90px;
     }
-    &.er2{
+    // right
+    &.position2{
       top: -30px;
       left:150px;
     }
@@ -215,12 +218,6 @@ h1 {
   &.pin_2{
     margin-top: 80px;
   }
-  // &.pin_3{
-    // top:10px;
-    // left: 20px;
-    // position: absolute;
-
-  // }
 }
 // MEMO//////////////////////////
 .note_wrapper{

@@ -5,13 +5,14 @@
 
 .content {
   @extend %mainContainer;
-  position: relative; /////////////
+  position: relative;
 }
+
 //empty scrollbar is showing from time to time (bug?)
-//in main container so I added overflow to avoid this
-.subPagesContent{
+//in main container, so I added overflow to avoid this
+.subPagesContent {
   overflow-x: hidden;
-  @extend %lightTilt;////
+  @extend %lightTilt;
 }
 
 .links {
@@ -22,7 +23,8 @@
 //photo subPages 1
 .photo_subPages1 {
   margin-left: 30%;
-  &.photo_diffrent_margin{//subPage2 photo
+
+  &.photo_diffrent_margin {//subPage2 photo
     margin-left: 5%;
   }
 }
@@ -32,40 +34,40 @@
   transform: rotate(-18deg);
 }
 
-.note.note_subPages{
-  // &._subPages - not work...
+.note.note_subPages {
   top: 175px;
   left: -40px;
-  &.nfz{//subPage3
-    left:-115px;///
+
+  &.nfz {//subPage3
+    left: -115px; ///
   }
-  &.bhp{///subPage4
-    top:210px;
+
+  &.bhp {///subPage4
+    top: 210px;
     left: -15px;
   }
 }
-.ambulance.right_corner{//subPage4
-  top: -35px;
-  right:-30px;
-  transform: rotate(0deg);
-  box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);//
-  border-radius: 50%;//
-}
 
+.ambulance.right_corner {//subPage4
+  top: -35px;
+  right: -30px;
+  transform: rotate(0deg);
+  box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3); //
+  border-radius: 50%; //
+}
 //*********************************************
 //************* media queries *****************
 //*********************************************
-@media only screen and (max-width:390px){
-  .panel{
-    .subPage8_table{
+@media only screen and (max-width:390px) {
+  .panel {
+    .subPage8_table {
       font-size: 0.76em;
     }
   }
 }
 @media only screen and (max-width:520px) {
-
-  .ambulance.right_corner{//subPage4
-    top:-15px;
+  .ambulance.right_corner {//subPage4
+    top: -15px;
     right: -20px;
     width: 75px;
     height: auto;

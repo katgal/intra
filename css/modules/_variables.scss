@@ -91,7 +91,7 @@ $minor8-color: rgb(245, 218, 113);
   }
 }
 
-/////////used
+//used for .subPageContent
 %lightTilt{
   a:nth-child(even){
     margin-top: 30px;
@@ -104,14 +104,32 @@ $minor8-color: rgb(245, 218, 113);
     transform: rotate(-2deg);
   }
 }
-
-///////////////used
+//ROTATE/TILT PINS AND PHOTOS
+//used for pin rotation
 .rotate{
   transform: rotate(-85deg)
 }
 .rotate2{
   transform: rotate(33deg);
 }
+
+//for PHONES links rotation
+.tilt {
+  transform: rotate(1deg);
+}
+
+.tilt2 {
+  transform: rotate(-3deg);
+}
+//photo rotation - index, subPage5
+.tilt3 {
+  transform: rotate(7deg);
+}
+
+// .pin.pin_1.pin_low{
+  // top: 345px;
+  // left: 5px;
+// }
 
 %logo{
   position: absolute;
