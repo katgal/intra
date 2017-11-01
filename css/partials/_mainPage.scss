@@ -14,9 +14,11 @@ body {
   // background-color: lighten(rgb(2,43,27), 10%);//
   // background-color: rgb(66,123,104);
   // background-color: lighten(rgb(14,83,112), 3%);
-
-
-
+    //  background-color: white;
+    //  background-image: url("../images/logoSzpital.png");
+    //  background-repeat: repeat;
+    //  background-size: contain;
+    //  background-size: 50%;
 /*
 background: rgba(1,22,72,1);
 background: -moz-linear-gradient(left, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%);
@@ -30,7 +32,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011648', end
 
 // #1b79b6
 // #116487
-
+/*
  ///ten
 background: rgba(248,80,50,1);
 background: -moz-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
@@ -40,7 +42,7 @@ background: -o-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, 
 background: -ms-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
 background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#01b79c', GradientType=1 );
-
+*/
 
 
 /*
@@ -65,10 +67,52 @@ background: linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b79c', endColorstr='#01b79c', GradientType=1 );
 */
 
+// background: #000046;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// background: #085078;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// background: #2c3e50;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// background: #1e3c72;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// background: #0575E6;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+// background: #000046;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+//mlecze top/ left
+background: #00467F;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to top, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to top, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+//troche za jasny
+// background: #3D7EAA;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to left, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to left, #FFE47A, #3D7EAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+//troche za dużo zielonego
+// background: #159957;  /* fallback for old browsers */
+// background: -webkit-linear-gradient(to bottom, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
+// background: linear-gradient(to bottom, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+
+
+
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
+  // background-size: cover;
   font-family: Arial, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -113,7 +157,7 @@ h1 {
   max-height: 1024px;
   padding: 15px;
   margin-right: 10px;
-  border-radius: 5px;
+  // border-radius: 5px;
   padding: 30px;
 }
 
@@ -132,11 +176,13 @@ h1 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 30px;
-  border-radius: 5px;
+  // border-radius: 5px;
 
   position: relative;/////////
   // &:hover {
-        box-shadow: 0 1px 10px 2px rgba($minor3-color, 0.2);
+        // box-shadow: 0 1px 10px 2px rgba($minor3-color, 0.2);
+        box-shadow: 0 1px 10px 2px rgba($additional2-color, 0.1);
+
   // }
   a:nth-child(even){
     margin-top: 30px;
@@ -325,6 +371,7 @@ h1 {
   text-transform: uppercase;
   @extend %flexCenter;
   border-radius: 5px;
+  border-radius: 1px; //added radius bc of ragged edges // ragged edges tilt fix
   box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
   padding: 5px;
   color: $main-color;

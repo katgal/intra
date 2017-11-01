@@ -24,7 +24,6 @@
   max-height: 1024px;
   overflow: auto;
   padding: 30px;
-  border-radius: 5px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -36,7 +35,7 @@
   align-items: flex-start;
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
-  box-shadow: 0 1px 10px 2px rgba(132, 208, 234, 0.2);
+  box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .links, .return, .downloadStructure {
@@ -46,7 +45,7 @@
   margin: 20px;
   padding: 20px;
   text-align: center;
-  border-radius: 5px;
+  border-radius: 1px;
   box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
   color: #c3eaf3;
 }
@@ -183,14 +182,17 @@ background: -ms-linear-gradient(left, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%
 background: linear-gradient(to right, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011648', endColorstr='#01b79c', GradientType=1 );
 */
-  background: #f85032;
-  background: -moz-linear-gradient(45deg, #f85032 0%, #011648 0%, #011648 17%, #01b79c 88%, #01b79c 100%);
-  background: -webkit-gradient(left bottom, right top, color-stop(0%, #f85032), color-stop(0%, #011648), color-stop(17%, #011648), color-stop(88%, #01b79c), color-stop(100%, #01b79c));
-  background: -webkit-linear-gradient(45deg, #f85032 0%, #011648 0%, #011648 17%, #01b79c 88%, #01b79c 100%);
-  background: -o-linear-gradient(45deg, #f85032 0%, #011648 0%, #011648 17%, #01b79c 88%, #01b79c 100%);
-  background: -ms-linear-gradient(45deg, #f85032 0%, #011648 0%, #011648 17%, #01b79c 88%, #01b79c 100%);
-  background: linear-gradient(45deg, #f85032 0%, #011648 0%, #011648 17%, #01b79c 88%, #01b79c 100%);
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#01b79c', GradientType=1 );
+  /*
+ ///ten
+background: rgba(248,80,50,1);
+background: -moz-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
+background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(1,22,72,1)), color-stop(17%, rgba(1,22,72,1)), color-stop(88%, rgba(1,183,156,1)), color-stop(100%, rgba(1,183,156,1)));
+background: -webkit-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
+background: -o-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
+background: -ms-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
+background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#01b79c', GradientType=1 );
+*/
   /*
 background: rgba(1,183,156,1);
 background: -moz-linear-gradient(left, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
@@ -211,10 +213,15 @@ background: -ms-linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, r
 background: linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b79c', endColorstr='#01b79c', GradientType=1 );
 */
+  background: #00467F;
+  /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #A5CC82, #00467F);
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #A5CC82, #00467F);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
-  background-size: cover;
   font-family: Arial, sans-serif;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -258,7 +265,6 @@ h1 {
   max-height: 1024px;
   padding: 15px;
   margin-right: 10px;
-  border-radius: 5px;
   padding: 30px;
 }
 
@@ -277,9 +283,8 @@ h1 {
   -ms-flex-wrap: wrap;
   flex-wrap: wrap;
   padding: 30px;
-  border-radius: 5px;
   position: relative;
-  box-shadow: 0 1px 10px 2px rgba(132, 208, 234, 0.2);
+  box-shadow: 0 1px 10px 2px rgba(0, 0, 0, 0.1);
 }
 
 .container a:nth-child(even) {
@@ -453,6 +458,7 @@ h1 {
   text-align: center;
   text-transform: uppercase;
   border-radius: 5px;
+  border-radius: 1px;
   box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
   padding: 5px;
   color: #c3eaf3;
@@ -859,7 +865,6 @@ select {
   right: 0;
   z-index: 10;
   margin: 10px;
-  border-radius: 3px;
   background-color: #115087;
   border-color: #115087;
   color: white;
