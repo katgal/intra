@@ -729,20 +729,6 @@ h1 {
   left: 30px;
 }
 
-/*
-//for PHONES links rotation
-.tilt {
-  transform: rotate(1deg);
-}
-
-.tilt2 {
-  transform: rotate(-3deg);
-}
-//photo rotation
-.tilt3 {
-  transform: rotate(7deg);
-}
-*/
 .pin.pin_1.main_wrapper__pin {
   top: 195px;
   left: 3px;

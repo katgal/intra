@@ -48,7 +48,7 @@ $minor8-color: rgb(245, 218, 113);
   max-height: 1024px;
   overflow: auto;
   padding: 30px;
-  // border-radius: 5px;
+  // border-radius: 5px;//deleted
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -129,10 +129,6 @@ $minor8-color: rgb(245, 218, 113);
   transform: rotate(7deg);
 }
 
-// .pin.pin_1.pin_low{
-  // top: 345px;
-  // left: 5px;
-// }
 
 %logo{
   position: absolute;

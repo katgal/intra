@@ -102,10 +102,9 @@
 }
 @media only screen and (max-width:545px) {
   .content.administrationBox {
-    ////////
-    width: 85vw; //////
-    margin: 0 auto;///
-  }//////
+    width: 85vw;
+    margin: 0 auto;
+  }
 
   .structure {
     width: 100%;
@@ -117,27 +116,27 @@
     }
   }
 }
-////
+
 @media only screen and (min-width:521px) and (max-width:545px) {
   .content.administrationBox {
     width: 73vw;
   }
 }
-//////
+
 //vertical photo (2 photo)
 @media only screen and (max-width: 623px) {
   .phone_photo.vertical {
-    width: 115px; /////////
+    width: 115px;
   }
 }
 @media only screen and (min-width:546px) and (max-width:780px) {
   .content.administrationBox {
     // width: 100vw;
-    width: 75vw; ////////////////
+    width: 75vw;
 
     .structure {
       // width: 42%;
-      width: 49%; ///////////
+      width: 49%;
       padding: 10px;
     }
   }
