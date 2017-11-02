@@ -12,16 +12,18 @@
 
   p:nth-child(2) {
     text-align: center;
-    border: 2px dashed rgba($minor1-color, 0.8);
+    // border: 2px dashed rgba($minor1-color, 0.8);
+    border: 2px dashed darken($minor1-color, 10%);//main gradient blue/yeloow
     border-radius: 5px;
     padding: 5px;
   }
-
+/*
   &:hover {
     p:nth-child(2) {
       border: 2px dashed darken($minor1-color, 10%);
     }
   }
+  */
 }
 
 .linkHeader {

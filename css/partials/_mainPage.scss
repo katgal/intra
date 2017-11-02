@@ -7,107 +7,12 @@
 
 body {
   box-sizing: border-box;
-  // background-color: darken($main-color, 45%);
-  // background-color: rgb(27,121,182);//
   // background-image: url("../images/sky.jpg");
-  // background-color: lighten(rgb(26,63,11), 10%);
-  // background-color: lighten(rgb(2,43,27), 10%);//
-  // background-color: rgb(66,123,104);
   // background-color: lighten(rgb(14,83,112), 3%);
-    //  background-color: white;
-    //  background-image: url("../images/logoSzpital.png");
-    //  background-repeat: repeat;
-    //  background-size: contain;
-    //  background-size: 50%;
-/*
-background: rgba(1,22,72,1);
-background: -moz-linear-gradient(left, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1,22,72,1)), color-stop(100%, rgba(1,183,156,1)));
-background: -webkit-linear-gradient(left, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%);
-background: -o-linear-gradient(left, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%);
-background: -ms-linear-gradient(left, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%);
-background: linear-gradient(to right, rgba(1,22,72,1) 0%, rgba(1,183,156,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#011648', endColorstr='#01b79c', GradientType=1 );
-*/
-
-// #1b79b6
-// #116487
-/*
- ///ten
-background: rgba(248,80,50,1);
-background: -moz-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(248,80,50,1)), color-stop(0%, rgba(1,22,72,1)), color-stop(17%, rgba(1,22,72,1)), color-stop(88%, rgba(1,183,156,1)), color-stop(100%, rgba(1,183,156,1)));
-background: -webkit-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
-background: -o-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
-background: linear-gradient(45deg, rgba(248,80,50,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 17%, rgba(1,183,156,1) 88%, rgba(1,183,156,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85032', endColorstr='#01b79c', GradientType=1 );
-*/
-
-
-/*
-background: rgba(1,183,156,1);
-background: -moz-linear-gradient(left, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: -webkit-gradient(left top, right top, color-stop(0%, rgba(1,183,156,1)), color-stop(0%, rgba(0,0,0,1)), color-stop(0%, rgba(1,22,72,1)), color-stop(41%, rgba(1,22,72,1)), color-stop(97%, rgba(1,183,156,1)), color-stop(100%, rgba(1,183,156,1)));
-background: -webkit-linear-gradient(left, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: -o-linear-gradient(left, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: -ms-linear-gradient(left, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: linear-gradient(to right, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b79c', endColorstr='#01b79c', GradientType=1 );
-*/
-
-/*
-background: rgba(1,183,156,1);
-background: -moz-linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: -webkit-gradient(left bottom, right top, color-stop(0%, rgba(1,183,156,1)), color-stop(0%, rgba(0,0,0,1)), color-stop(0%, rgba(1,22,72,1)), color-stop(41%, rgba(1,22,72,1)), color-stop(97%, rgba(1,183,156,1)), color-stop(100%, rgba(1,183,156,1)));
-background: -webkit-linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: -o-linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: -ms-linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-background: linear-gradient(45deg, rgba(1,183,156,1) 0%, rgba(0,0,0,1) 0%, rgba(1,22,72,1) 0%, rgba(1,22,72,1) 41%, rgba(1,183,156,1) 97%, rgba(1,183,156,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#01b79c', endColorstr='#01b79c', GradientType=1 );
-*/
-
-// background: #000046;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-// background: #085078;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #85D8CE, #085078);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #85D8CE, #085078); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-// background: #2c3e50;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #3498db, #2c3e50);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #3498db, #2c3e50); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-// background: #1e3c72;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #2a5298, #1e3c72);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #2a5298, #1e3c72); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-// background: #0575E6;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to right, #021B79, #0575E6);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to right, #021B79, #0575E6); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-// background: #000046;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-//mlecze top/ left
-background: #00467F;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to top, #A5CC82, #00467F);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to top, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-//troche za jasny
-// background: #3D7EAA;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to left, #FFE47A, #3D7EAA);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to left, #FFE47A, #3D7EAA); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-//troche za dużo zielonego
-// background: #159957;  /* fallback for old browsers */
-// background: -webkit-linear-gradient(to bottom, #155799, #159957);  /* Chrome 10-25, Safari 5.1-6 */
-// background: linear-gradient(to bottom, #155799, #159957); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-
-
-
+  //gradient blue-yellow
+  background: #00467F; /* fallback for old browsers */
+  background: -webkit-linear-gradient(to top, #A5CC82, #00467F); /* Chrome 10-25, Safari 5.1-6 */
+  background: linear-gradient(to top, #A5CC82, #00467F);/* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 
   background-position: center;
   background-repeat: no-repeat;
@@ -128,7 +33,7 @@ background: linear-gradient(to top, #A5CC82, #00467F); /* W3C, IE 10+/ Edge, Fir
   padding: 5%;
   //position relative for logo positioning
   position: relative;
-  height:100vh;
+  height: 100vh;
 }
 
 h1 {
@@ -177,180 +82,178 @@ h1 {
   flex-wrap: wrap;
   padding: 30px;
   // border-radius: 5px;
-
-  position: relative;/////////
+  position: relative; /////////
   // &:hover {
-        // box-shadow: 0 1px 10px 2px rgba($minor3-color, 0.2);
-        box-shadow: 0 1px 10px 2px rgba($additional2-color, 0.1);
-
+  // box-shadow: 0 1px 10px 2px rgba($minor3-color, 0.2);
+  box-shadow: 0 1px 10px 2px rgba($additional2-color, 0.1);
   // }
-  a:nth-child(even){
+  a:nth-child(even) {
     margin-top: 30px;
     transform: rotate(1deg);
   }
-  a:nth-child(odd){
+
+  a:nth-child(odd) {
     transform: rotate(-3deg);
   }
-  a:nth-of-type(5n+3){
+
+  a:nth-of-type(5n+3) {
     transform: rotate(-7deg);
   }
-
 }
 
-.photo_wrapper{
-  width:auto;
+.photo_wrapper {
+  width: auto;
   height: auto;
-  position: relative;////
+  position: relative;
   transform: rotate(-2deg);
-
   //PINS ON PHOTOS
-  .hospital_photos{
+  .hospital_photos {
     border: 6px solid $main-color;
     box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
 
-    &.large{
-      width:235px;
+    &.large {
+      width: 235px;
       // height:170px;
       height: auto;
       transform: rotate(10deg);
     }
     // &.er_reg{
-      // transform: rotate(7deg);
+    // transform: rotate(7deg);
     // }
   }
   //pins on photos
-  .pin{
+  .pin {
     position: absolute;
     top: -20px;
     left: 190px;
-    z-index:10;
+    z-index: 10;
     //middle
-    &.position1{
+    &.position1 {
       top: -30px;
-      left:90px;
+      left: 90px;
     }
     // right
-    &.position2{
+    &.position2 {
       top: -30px;
-      left:150px;
+      left: 150px;
     }
   }
 }
-
 ///////////////
-.main_wrapper{
+
+.main_wrapper {
   width: auto;
   height: auto;
   position: relative;
   ////main_wrapper__pin
 }
-.ambulance{
+
+.ambulance {
   width: 115px;
-    height: auto;
-    position: absolute;
-    right: -30px;
-    top: -33px;
-    z-index: 100;
-    transform: rotate(46deg);
+  height: auto;
+  position: absolute;
+  right: -30px;
+  top: -33px;
+  z-index: 100;
+  transform: rotate(46deg);
 }
 // FREE PINS
-.pin{
+
+.pin {
   // position: absolute;
-  &.pin_1{
-  top:5px;
-  left: 5px;
-  position: absolute;
+  &.pin_1 {
+    top: 5px;
+    left: 5px;
+    position: absolute;
   }
-  &.pin_2{
+
+  &.pin_2 {
     margin-top: 80px;
   }
 }
 // MEMO//////////////////////////
-.note_wrapper{
+
+.note_wrapper {
   width: auto;
   height: auto;
   position: relative;
-
 }
-.note{
+
+.note {
   width: 125px;
-  height:125px;
+  height: 125px;
   background-color: $minor8-color;
   transform: rotate(-25deg);
   box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
-  padding: 30px 5px 5px 5px;
+  padding: 30px 5px 5px;
   border-top-right-radius: 25px;
   overflow: hidden;
-
   position: absolute;
-    z-index: 20;
-    top: 70px;
-    left: 95px;
+  z-index: 20;
+  top: 70px;
+  left: 95px;
+  //folded corner//////////
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid lighten($minor8-color, 5%);
+    position: absolute;
+    top: -8px;
+    left: 111px;
+    //  border-top-right-radius: 20px;
+    box-shadow: 0 0 6px 1px rgba($additional2-color, 0.3);
+  }
 
- //folded corner//////////
-
- &::after{
-   content: "";
-   width: 0;
-   height: 0;
-   border-top: 20px solid transparent;
-   border-left: 20px solid lighten($minor8-color, 5%);
-   position: absolute;
-   top: -8px;
-   left: 111px;
-  //  border-top-right-radius: 20px;
-   box-shadow: 0px 0px 6px 1px rgba($additional2-color, 0.3);
- }
-
-  p:first-child{
+  p:first-child {
     width: 100%;
-    height:20px;
+    height: 20px;
     background-color: darken($minor8-color, 5%);
     position: absolute;
     top: 0;
     right: 0;
   }
-  &.note_sticky_2{
+
+  &.note_sticky_2 {
     top: 95px;
     left: 8px;
-    transform:rotate(25deg);
+    transform: rotate(25deg);
   }
-  &.left_shift{
+
+  &.left_shift {
     left: 65px;
   }
 }
-
 //note 2///////////////////////
-.note2{
+
+.note2 {
   width: 125px;
-  height:125px;
+  height: 125px;
   background-color: $minor8-color;
   transform: rotate(-25deg);
   box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
-  padding: 30px 5px 5px 5px;
+  padding: 30px 5px 5px;
   border-top-right-radius: 25px;
   overflow: hidden;
-
   position: absolute;
-    z-index: 20;
+  z-index: 20;
+  //folded corner//////////
+  &::after {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 20px solid transparent;
+    border-left: 20px solid lighten($minor8-color, 5%);
+    position: absolute;
+    top: -8px;
+    left: 111px;
+    box-shadow: 0 0 6px 1px rgba($additional2-color, 0.3);
+  }
 
- //folded corner//////////
-
- &::after{
-   content: "";
-   width: 0;
-   height: 0;
-   border-top: 20px solid transparent;
-   border-left: 20px solid lighten($minor8-color, 5%);
-   position: absolute;
-   top: -8px;
-   left: 111px;
-   box-shadow: 0px 0px 6px 1px rgba($additional2-color, 0.3);
- }
-
-  p:first-child{
+  p:first-child {
     width: 100%;
-    height:20px;
+    height: 20px;
     background-color: darken($minor8-color, 5%);
     position: absolute;
     top: 0;
@@ -358,19 +261,20 @@ h1 {
   }
 }
 //////////////////////
+
 .box {
   // width: 40%; //after changes
-  width: auto;//
+  width: auto; //
   height: 25%;
-  min-height: 100px;////
-  max-height: 150px;////
+  min-height: 100px;
+  max-height: 150px;
   min-width: 155px;
   margin: 15px;
   font-size: 1.1em;
   text-align: center;
   text-transform: uppercase;
   @extend %flexCenter;
-  border-radius: 5px;
+  // border-radius: 5px;
   border-radius: 1px; //added radius bc of ragged edges // ragged edges tilt fix
   box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
   padding: 5px;
@@ -386,8 +290,7 @@ h1 {
     box-shadow: 3px 5px 30px 3px rgba($additional2-color, 0.3);
     background-color: rgba($accent-color, 0.4);
     color: lighten($main-color, 30%);
-    z-index: 101;//////
-
+    z-index: 101; //////
   }
 }
 
@@ -397,103 +300,91 @@ h1 {
   margin-bottom: 30px;
 }
 
-.icons{
-  position:absolute;
+.icons {
+  position: absolute;
   top: 5px;
   right: 5px;
 }
 
-.logo{
-@extend %logo;
+.logo {
+  @extend %logo;
 }
-
 ///////////////////////////
 //custom scrollbar
 ///////////////////////////
 //firefox is not supported
 //it is better to avoid custom scrollbars written in javascript
 //jquery plugins didnt work properly (flexbox issues, have to set min-height)
-
 // chrome and opera
 ::-webkit-scrollbar {
-    width: 6px;
+  width: 6px;
 }
 
 ::-webkit-scrollbar-track {
-    background-color: rgba(0,0,0,0.2);
-    border-radius: 10px;
-    width: 3px;
+  background-color: rgba(0,0,0,0.2);
+  border-radius: 10px;
+  width: 3px;
 }
 
 ::-webkit-scrollbar-thumb {
-    border-radius: 10px;
-    background-color: rgba($additional-color, 0.6);
+  border-radius: 10px;
+  background-color: rgba($additional-color, 0.6);
 }
-
-//internet explorer
-//if gradient - turned styled scrollbar off
-/*
-body{
-  scrollbar-base-color: $additional-color;
-  scrollbar-face-color: $additional-color;
-  scrollbar-highlight-color:$additional-color;
-  scrollbar-shadow-color: $additional-color;
-  // scrollbar-track-color:  rgb(72,179, 212);
-  scrollbar-3dlight-color:  $additional-color;
-  scrollbar-darkshadow-color: $additional-color;
-  scrollbar-arrow-color:  $additional-color;
-}
-*/
 
 //*********************************************
 //************* media queries *****************
 //*********************************************
-
 @media only screen and (max-width:520px) {
   // body height: 100% solved problem with floating footer/logo img
   // (it was in mid of the small screens) -
   //now it is sticking to the bottom of the page (phones); for big screens 100vh is ok.
   //general rule to solve problems with floating elements in diffrent size screens
   //is to wrap everything in one container and give it width:100% and height:100%
-  body{
+  body {
     height: 100%;
   }
-  .main_wrapper{
-    width: 95%;////
-    .ambulance{///
-      width:100px;/////
-      // right: -10px;//
-      // top: -35px;////
-      right: -2px;//
-      top: -40px;////
 
+  .main_wrapper {
+    width: 95%;
+
+    .ambulance {
+      width: 100px;
+      // right: -10px;
+      // top: -35px;
+      right: -2px;
+      top: -40px;
       transform: rotate(33deg);
     }
   }
+
   .asideInfo,
   .box,
   .container {
     // width: 100%;
     width: auto;
   }
-  .linkIcon{
+
+  .linkIcon {
     font-size: 1em;
   }
-  .icons{
-    padding:5px;
+
+  .icons {
+    padding: 5px;
   }
-  .note_sticky_1{//////////////////////////////////
-   left: 75px;////
+
+  .note_sticky_1 {
+    left: 75px;
   }
-  .photo_wrapper .hospital_photos.large{
+
+  .photo_wrapper .hospital_photos.large {
     width: 225px;
   }
-  .logo{
+
+  .logo {
     bottom: -7%;
     left: 10px;
     max-width: 60px;
   }
-
   //ie flex problem - work fine only after refresh or window resize - there is a tip to add
   // min-width to an element, but it is not optimal solution in this case...
   // .box{
@@ -503,69 +394,65 @@ body{
   //click permission agreement and flex is working fine
 }
 @media only screen and (min-width : 521px) and (max-width:767px) {
-  body{
+  body {
     height: 100%;
   }
-  .main_wrapper{
-    width: 80%;////
+
+  .main_wrapper {
+    width: 80%;
   }
+
   .asideInfo,
   .container {
     // width: 47%;
     width: 100%;
   }
-  .asideInfo{
-    height:auto;
-  .aside{
-    margin: 0 auto;
-    &:nth-child(2){
-      margin-top: 20px;
+
+  .asideInfo {
+    height: auto;
+
+    .aside {
+      margin: 0 auto;
+
+      &:nth-child(2) {
+        margin-top: 20px;
+      }
     }
-  }}
+  }
+
   .box {
     // width: 100%;
   }
 }
-@media only screen and (min-width:768px) and (max-width:1024px) {
-  .box {
+// @media only screen and (min-width:768px) and (max-width:1024px) {
+  // .box {
     // width: 90%;
-  }
-}
+  // }
+// }
 @media only screen and (min-width:1025px) and (max-width:1280px) {
-  .box{
+  .box {
     // width:90%;
   }
+
   .aside {
     width: 95%;
   }
 }
 //after changes - non regular boxes look more like announcement table
-@media only screen and (max-width:1280px){
-  .pin_2{
+@media only screen and (max-width:1280px) {
+  .pin_2 {
     margin-left: 120px;
   }
 }
-
 @media only screen and (min-width:1281px) and (max-width:1599px) {
-  .box{
-    width:40%;
+  .box {
+    width: 40%;
   }
-  .pin_2{ //erase pin at bottom of the main container
-    // position: absolute;
-    // bottom: 30px;
-    // right: 0px;
-  }
-}
-// @media only screen and (min-width:1600px){
-  // .container{
-    // a:nth-child(even){
-      // margin-top: 30px;
-    // }
-  // }
-// }
 
-@media only screen and (min-width:2540px){
-  .container{
+}
+
+@media only screen and (min-width:2540px) {
+  .container {
     height: 40vh;
   }
 }
