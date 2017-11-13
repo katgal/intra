@@ -135,11 +135,11 @@ hr {
     // or I just can turn border-collapse off, it will work also properly
     &:hover {
       // background-color: rgba($accent-color, 0.4); if gradient turn off hover backlight
-      color: lighten($main-color, 30%); //ISO tables
+      // color: lighten($main-color, 30%); //ISO tables
       //for ISO tables
-      a {
-        color: lighten($main-color, 30%);
-      }
+      // a {
+        // color: lighten($main-color, 30%);
+      // }
     }
 
     td,

@@ -16,11 +16,12 @@
   <h3 class="exeptionH3">Jeżeli jakiś numer telefonu jest nieaktualny, proszę to zgłosić pod numerem 843</h3>
 
   <!-- search engine -->
-  <select onchange="location = this.value" id="test">
+  <select id="search">
+
       <option value="" disabled selected hidden>
         Wybierz Oddział
       </option>
-      <option value="#wybrane_numery">
+      <option value="#wybrane_numery" data-id="w">
         Wybrane Numery Szpitala
       </option>
       <option disabled>──────────</option>
@@ -173,7 +174,7 @@
 
       <!-- direct phone numbers -->
       <div class="accordionWrapper">
-        <div class="links accordion" id="wybrane_numery">Wybrane Numery Szpitala</div>
+        <div class="links accordion" id="wybrane_numery" data-id="w">Wybrane Numery Szpitala</div>
         <div class="panel">
           <table>
             <tbody>

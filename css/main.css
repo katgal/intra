@@ -48,6 +48,7 @@
   border-radius: 1px;
   box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
   color: #c3eaf3;
+  transition: 0.5s ease;
 }
 
 .links:link, .return:link, .downloadStructure:link {
@@ -420,6 +421,7 @@ h1 {
   box-shadow: 1px 5px 20px 0 rgba(0, 0, 0, 0.3);
   padding: 5px;
   color: #c3eaf3;
+  transition: 0.5s ease;
   position: relative;
 }
 
@@ -892,14 +894,6 @@ hr {
   color: #c3eaf3;
   box-shadow: 1px 10px 20px 0 rgba(0, 0, 0, 0.3);
   border-radius: 5px;
-}
-
-.panel table:hover {
-  color: white;
-}
-
-.panel table:hover a {
-  color: white;
 }
 
 .panel table td,

@@ -80,6 +80,7 @@ $minor8-color: rgb(245, 218, 113);
   border-radius: 1px; //added radius bc of ragged edges // ragged edges tilt fix
   box-shadow: 1px 5px 20px 0 rgba($additional2-color, 0.3);
   color: $main-color;
+  transition: 0.5s ease;
 
   &:link {
     text-decoration: none;
